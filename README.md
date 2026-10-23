@@ -2,9 +2,10 @@
 
 This repository contains the artifacts associated with the paper:
 
-> **"An Empirical Benchmark of Supervised Fine-tuned Models for Natural-Language-to-VHDL Generation of Embedded System Components"**
+> **"An empirical benchmark of supervised fine-tuned models for natural-language-to-VHDL generation of embedded system components"**
 > Pietro Liguori, Alessandra De Benedictis, Gaetano Prisco, Domenico Cotroneo
-> *Journal of Systems Architecture*, 2026
+> *Journal of Systems Architecture*, 2026, 104049
+> DOI: [10.1016/j.sysarc.2026.104049](https://doi.org/10.1016/j.sysarc.2026.104049) — [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S138376212600367X)
 
 ---
 
@@ -211,13 +212,19 @@ interactive VHDL code generator:
 If you use these artifacts in your research, please cite:
 
 ```bibtex
-@article{liguori2026vhdl,
-  title   = {An Empirical Benchmark of Supervised Fine-tuned Models for
-             Natural-Language-to-VHDL Generation of Embedded System Components},
-  author  = {Liguori, Pietro and De Benedictis, Alessandra and
-             Prisco, Gaetano and Cotroneo, Domenico},
-  journal = {Journal of Systems Architecture},
-  year    = {2026}
+@article{LIGUORI2026104049,
+  title    = {An empirical benchmark of supervised fine-tuned models for
+              natural-language-to-VHDL generation of embedded system components},
+  author   = {Pietro Liguori and Alessandra {De Benedictis} and
+              Gaetano Prisco and Domenico Cotroneo},
+  journal  = {Journal of Systems Architecture},
+  pages    = {104049},
+  year     = {2026},
+  issn     = {1383-7621},
+  doi      = {https://doi.org/10.1016/j.sysarc.2026.104049},
+  url      = {https://www.sciencedirect.com/science/article/pii/S138376212600367X},
+  keywords = {Embedded systems, Design automation, VHDL generation,
+              Language models, Hardware synthesis}
 }
 ```
 
