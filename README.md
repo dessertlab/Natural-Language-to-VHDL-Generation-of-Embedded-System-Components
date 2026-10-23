@@ -29,11 +29,6 @@ This repository contains the artifacts associated with the paper:
 │   ├── crystal_bleu.py                # CrystalBLEU (Pygments VHDL lexer, per-sample)
 │   └── bleu_score.py                  # BLEU implementation (Google, Apache-2.0)
 │
-├── results/                      # Aggregated automatic-metric results
-│   ├── all_metrics.json               # All metrics for all evaluated systems
-│   ├── metrics_comparison.xlsx        # Comparison tables (SLMs vs LLMs)
-│   └── *_metrics.txt                  # Per-model metric reports
-│
 ├── verilogeval_vhdl/             # Cross-benchmark evaluation on VerilogEval v2
 │   ├── translate_prompts.py           # Deterministic Verilog->VHDL prompt translation
 │   ├── generate_codet5p.py            # Generation with fine-tuned CodeT5+ 770M
@@ -135,9 +130,7 @@ Note: the reference path at the top of `output_similarity_metrics.py` should be 
 one of the provided reference files (e.g.,
 `models_output/fine-tuned-SLMs/CodeT5p_770/finetuned/refs.txt`). Recomputing CrystalBLEU
 additionally requires the training/validation corpus files (restricted dataset package),
-which are used to extract the trivially shared n-grams. The aggregated outputs of these
-scripts for every evaluated system are already provided in `results/`
-(`all_metrics.json`, `metrics_comparison.xlsx`).
+which are used to extract the trivially shared n-grams.
 
 ---
 
