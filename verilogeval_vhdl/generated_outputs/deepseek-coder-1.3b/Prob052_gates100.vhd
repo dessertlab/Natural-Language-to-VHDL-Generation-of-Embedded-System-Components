@@ -1,0 +1,1 @@
+circuit TopModule : in_p <= 100-bit; out_and, out_or, out_xor : output std_logic; begin end circuit TopModule : entity work.CombinationalCircuit(dataflow) port map(in[99:0] => 100-bit, out_and, out_or, out_xor);

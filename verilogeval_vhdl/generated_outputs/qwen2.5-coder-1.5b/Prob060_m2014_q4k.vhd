@@ -1,0 +1,1 @@
+TopModule is a component with clk, resetn, in_p as input std_logic signals, out_p as output std_logic signal; entity is a statement of type rom with addr as input std_logic_vector signal of 3 bit, data_out as output std_logic_vector signal of 32 bit

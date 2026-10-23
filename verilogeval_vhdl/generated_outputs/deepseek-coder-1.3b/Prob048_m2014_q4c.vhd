@@ -1,0 +1,1 @@
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( Clk : in STD_LOGIC; D : in STD_LOGIC; R : in STD_LOGIC; Q : out STD_LOGIC); end TopModule; architecture Behavioral of TopModule is begin process (Clk) begin if rising_edge(Clk) then if R = '1' then Q <= '0'; else Q <= D; end if ; end if ; end process ; end Behavioral;

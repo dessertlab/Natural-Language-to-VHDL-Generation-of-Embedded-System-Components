@@ -1,0 +1,1 @@
+TopModule: input in_p : STD_LOGIC_VECTOR (2 downto 0); output out_p : STD_LOGIC_VECTOR (1 downto 0); begin process (in_p) begin out_p(0) <= std_logic_vector(unsigned(in_p) / 2); out_p(1) <= std_logic_vector(unsigned(in_p) / 2); end process; end TopModule;

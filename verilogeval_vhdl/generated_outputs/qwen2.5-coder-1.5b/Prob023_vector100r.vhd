@@ -1,0 +1,1 @@
+TopModule is an entity with input and output ports of 100 bits. Define a signal temp of type std_logic_vector with 100 bits. Set the first bit of temp signal to the last bit of in_p signal, and so on, until all bits are reversed.

@@ -1,0 +1,1 @@
+TopModule: in p1a, p1b, p1c, p1d, p2a, p2b, p2c, p2d : in; p1y, p2y : out; signal p: std_logic_vector(3 downto 0); begin process (p1a, p1b, p1c, p1d, p2a, p2b, p2c, p2d) begin p <= p1a & p1b & p1c & p1d; p1y <= p(0); p2y <= p(1); end process; end TopModule;

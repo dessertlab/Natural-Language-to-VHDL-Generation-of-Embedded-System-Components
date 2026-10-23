@@ -1,0 +1,1 @@
+TopModule is a component with clk as input std_logic signal, areset as input std_logic signal, x as input std_logic signal, z as output std_logic signal; ROM is a signal of type std_logic_vector with 8 bits; define a constant TIMEOUT_VAL of type integer and initialize it to 1000

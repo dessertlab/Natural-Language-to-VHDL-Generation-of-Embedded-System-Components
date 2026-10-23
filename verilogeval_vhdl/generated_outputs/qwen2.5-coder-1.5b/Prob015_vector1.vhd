@@ -1,0 +1,1 @@
+TopModule is a component with input std_logic_vector in_p (15 downto 0) and output std_logic_vector out_hi (7 downto 0), std_logic_vector out_lo (7 downto 0); architecture Behavioral of TopModule is begin end architecture Behavioral;

@@ -1,0 +1,209 @@
+problem,result,synth,ctx_repair,detail
+Prob001_zero,PASS,True,,1 vettori
+Prob002_m2014_q4i,PASS,True,,1 vettori
+Prob003_step_one,PASS,True,,1 vettori
+Prob004_vector2,functional-fail,True,,256/256 vettori errati
+Prob005_notgate,PASS,True,,2 vettori
+Prob006_vectorr,interface-mismatch,,,"tb.vhd:13:49:error: can't associate ""in_p"" with port ""In_P""
+  dut : entity work.TopModule port map (in_p => in_p, out_p "
+Prob007_wire,PASS,True,,2 vettori
+Prob008_m2014_q4h,PASS,True,,2 vettori
+Prob009_popcount3,sim-error,True,numeric_std,trace 3/8
+Prob010_mt2015_q4a,PASS,True,,4 vettori
+Prob011_norgate,functional-fail,True,,4/4 vettori errati
+Prob012_xnorgate,functional-fail,True,,1/4 vettori errati
+Prob013_m2014_q4e,functional-fail,True,,3/4 vettori errati
+Prob014_andgate,PASS,True,,4 vettori
+Prob015_vector1,no-entity,,,
+Prob016_m2014_q4j,functional-fail,True,,248/256 vettori errati
+Prob017_mux2to1v,PASS,True,,256 vettori
+Prob018_mux256to1,analysis-error,,,"gen.vhd:2:1381:error: unexpected token 'in' in a primary
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is "
+Prob019_m2014_q4f,functional-fail,True,,2/4 vettori errati
+Prob020_mt2015_eq2,PASS,True,,16 vettori
+Prob021_mux256to1v,no-entity,,,
+Prob022_mux2to1,PASS,True,,8 vettori
+Prob023_vector100r,PASS,True,,256 vettori
+Prob024_hadd,PASS,True,,4 vettori
+Prob025_reduction,functional-fail,True,,256/256 vettori errati
+Prob026_alwaysblock1,PASS,True,,4 vettori
+Prob027_fadd,functional-fail,True,,5/8 vettori errati
+Prob028_m2014_q4a,PASS,True,,4 vettori
+Prob029_m2014_q4g,functional-fail,True,,8/8 vettori errati
+Prob030_popcount255,PASS,True,numeric_std,256 vettori
+Prob031_dff,golden-compile-error,,,"tb.sv:11: error: Cannot perform procedural assignment to variable 'q' because it is also continuously assigned.
+tb.sv:16"
+Prob032_vector0,analysis-error,,,"gen.vhd:2:339:error: can't match ""temp"" with type STD_ULOGIC
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule"
+Prob033_ece241_2014_q1c,functional-fail,True,std_logic_unsigned,121/256 vettori errati
+Prob034_dff8,analysis-error,,,"gen.vhd:2:283:error: missing "";"" at end of object declaration
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModul"
+Prob035_count1to10,sim-error,True,numeric_std,trace 39/100
+Prob036_ringer,functional-fail,True,,3/4 vettori errati
+Prob037_review2015_count1k,PASS,True,numeric_std,100 vettori
+Prob038_count15,sim-error,True,numeric_std,trace 62/100
+Prob039_always_if,functional-fail,True,,4/16 vettori errati
+Prob040_count10,sim-error,True,numeric_std,trace 39/100
+Prob041_dff8r,PASS,True,,100 vettori
+Prob042_vector4,PASS,True,,256 vettori
+Prob043_vector5,no-entity,,,
+Prob044_vectorgates,interface-mismatch,,,"tb.vhd:18:109:error: can't associate ""out_or_logical"" with port ""Out_Or_Logical""
+  dut : entity work.TopModule port map "
+Prob045_edgedetect2,analysis-error,,,"gen.vhd:2:342:error: signal ""prev"" is not a variable to be assigned
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity To"
+Prob046_dff8p,functional-fail,True,,13/100 vettori errati
+Prob047_dff8ar,PASS,True,,100 vettori
+Prob048_m2014_q4c,PASS,True,,100 vettori
+Prob049_m2014_q4b,analysis-error,,,"gen.vhd:2:109:error: no declaration for ""reset""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( Cl"
+Prob050_kmap1,functional-fail,True,,3/8 vettori errati
+Prob051_gates4,no-entity,,,
+Prob052_gates100,no-entity,,,
+Prob053_m2014_q4d,no-entity,,,
+Prob054_edgedetect,no-entity,,,
+Prob055_conditional,analysis-error,,,"gen.vhd:2:366:error: no declaration for ""unsigned""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ("
+Prob056_ece241_2013_q7,no-entity,,,
+Prob057_kmap2,functional-fail,True,,9/16 vettori errati
+Prob058_alwaysblock2,analysis-error,,,"gen.vhd:2:352:error: target (variable ""temp"") is not a signal
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModul"
+Prob059_wire4,functional-fail,True,,7/8 vettori errati
+Prob060_m2014_q4k,functional-fail,True,,33/100 vettori errati
+Prob061_2014_q4a,functional-fail,True,,27/100 vettori errati
+Prob063_review2015_shiftcount,interface-mismatch,,numeric_std,"tb.vhd:21:109:error: can't associate ""data"" with port ""Data""
+  dut : entity work.TopModule port map (clk => clk, shift_e"
+Prob064_vector3,sim-error,False,,trace 0/256
+Prob065_7420,functional-fail,True,,256/256 vettori errati
+Prob066_edgecapture,functional-fail,True,,69/100 vettori errati
+Prob067_countslow,sim-error,True,numeric_std,trace 33/100
+Prob068_countbcd,sim-error,False,std_logic_unsigned,trace 0/100
+Prob069_truthtable1,no-entity,,,
+Prob070_ece241_2013_q2,analysis-error,,,"gen.vhd:2:487:error: no function declarations for operator ""+""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModu"
+Prob071_always_casez,functional-fail,True,numeric_std,247/256 vettori errati
+Prob072_thermostat,analysis-error,,,"gen.vhd:2:351:error: no function declarations for operator ""=""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModu"
+Prob073_dff16e,analysis-error,,,"gen.vhd:2:307:error: type mark expected in a subtype indication
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopMod"
+Prob074_ece241_2014_q4,analysis-error,,,"gen.vhd:2:240:error: identifier ""x"" already used for a declaration
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Top"
+Prob075_counter_2bc,analysis-error,,,"gen.vhd:2:283:error: no declaration for ""unsigned""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ("
+Prob076_always_case,analysis-error,,,"gen.vhd:2:551:error: no declaration for ""dataout""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( "
+Prob077_wire_decl,functional-fail,True,,10/16 vettori errati
+Prob078_dualedge,analysis-error,,,"gen.vhd:2:277:error: target (variable ""temp"") is not a signal
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModul"
+Prob079_fsm3onehot,functional-fail,True,,28/32 vettori errati
+Prob080_timer,analysis-error,,,"gen.vhd:2:333:error: no function declarations for operator ""=""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModu"
+Prob081_7458,PASS,True,,256 vettori
+Prob082_lfsr32,sim-error,False,,trace 0/100
+Prob083_mt2015_q4b,functional-fail,True,,1/4 vettori errati
+Prob084_ece241_2013_q12,sim-error,False,,trace 0/100
+Prob085_shift4,functional-fail,True,,49/100 vettori errati
+Prob086_lfsr5,functional-fail,True,,85/100 vettori errati
+Prob087_gates,no-entity,,,
+Prob088_ece241_2014_q5b,functional-fail,True,,100/100 vettori errati
+Prob089_ece241_2014_q5a,analysis-error,,,"gen.vhd:2:1008:error: ';' expected at end of signal assignment
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModu"
+Prob090_circuit1,no-entity,,,
+Prob091_2012_q2b,functional-fail,True,,123/128 vettori errati
+Prob092_gatesv100,functional-fail,True,,256/256 vettori errati
+Prob093_ece241_2014_q3,sim-error,False,,trace 0/4
+Prob094_gatesv,analysis-error,,,"gen.vhd:2:71:error: interface declaration expected
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ("
+Prob095_review2015_fsmshift,analysis-error,,,"gen.vhd:2:244:error: identifier ""shift_ena"" already used for a declaration
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; en"
+Prob096_review2015_fsmseq,sim-error,True,,trace 11/100
+Prob097_mux9to1v,interface-mismatch,,,"tb.vhd:44:9:warning: declaration of ""i"" hides signal ""i"" [-Whide]
+    for i in 0 to 255 loop
+        ^
+tb.vhd:53:7:error"
+Prob098_circuit7,functional-fail,True,,100/100 vettori errati
+Prob099_m2014_q6c,interface-mismatch,,,"tb.vhd:17:53:error: can't associate ""y"" with port ""Y""
+  dut : entity work.NextStateMachine port map (y => y, w => w, Y1 "
+Prob100_fsm3comb,analysis-error,,,"gen.vhd:2:381:error: no function declarations for operator ""=""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModu"
+Prob101_circuit4,functional-fail,True,,8/16 vettori errati
+Prob102_circuit3,functional-fail,True,,5/16 vettori errati
+Prob103_circuit2,analysis-error,,,"gen.vhd:2:254:warning: declaration of ""q"" hides port ""Q"" [-Whide]
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopM"
+Prob104_mt2015_muxdff,analysis-error,,,"gen.vhd:2:285:error: port ""q_in"" can't be assigned
+library IEEE; use IEEE.std_logic_1164.all; entity TopModule is port ("
+Prob105_rotate100,sim-error,False,,trace 0/100
+Prob106_always_nolatches,analysis-error,,,"gen.vhd:4:1:error: 'end' is expected instead of end of file
+
+^
+gen.vhd:4:1:error: 'case' is expected instead of end of f"
+Prob107_fsm1s,functional-fail,True,,100/100 vettori errati
+Prob108_rule90,analysis-error,,,"gen.vhd:4:1:error: primary expression expected
+
+^
+gen.vhd:2:1230:error: ')' is expected instead of end of file
+library I"
+Prob109_fsm1,no-entity,,,
+Prob110_fsm2,analysis-error,,,"gen.vhd:2:254:error: identifier or character expected
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Por"
+Prob111_fsm2s,functional-fail,True,,100/100 vettori errati
+Prob112_always_case2,analysis-error,,,"gen.vhd:2:77:error: interface declaration expected
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity PriorityEncoder is "
+Prob113_2012_q1g,no-entity,,,
+Prob114_bugs_case,functional-fail,True,,10/256 vettori errati
+Prob115_shift18,sim-error,False,,trace 7/100
+Prob116_m2014_q3,interface-mismatch,,,"tb.vhd:13:46:error: actual constraints don't match formal ones
+  dut : entity work.TopModule port map (x => x, f => f);
+"
+Prob117_circuit9,no-entity,,,
+Prob118_history_shift,sim-error,False,,trace 4/100
+Prob119_fsm3,no-entity,,,
+Prob120_fsm3s,no-entity,,,
+Prob121_2014_q3bfsm,no-entity,,,
+Prob122_kmap4,functional-fail,True,,8/16 vettori errati
+Prob124_rule110,analysis-error,,,"gen.vhd:2:335:error: no declaration for ""data""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( Clk"
+Prob125_kmap3,functional-fail,True,,8/16 vettori errati
+Prob126_circuit6,no-entity,,,
+Prob127_lemmings1,functional-fail,True,,65/100 vettori errati
+Prob128_fsm_ps2,analysis-error,,,"gen.vhd:2:113:error: interface declaration expected
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port "
+Prob129_ece241_2013_q8,functional-fail,True,,100/100 vettori errati
+Prob130_circuit5,no-entity,,,
+Prob131_mt2015_q4,analysis-error,,,"gen.vhd:2:195:error: no declaration for ""a""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( X : in"
+Prob133_2014_q3fsm,analysis-error,,,"gen.vhd:2:238:error: no declaration for ""unsigned""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ("
+Prob134_2014_q3c,no-entity,,,
+Prob135_m2014_q6b,interface-mismatch,,,"tb.vhd:16:46:error: can't associate ""y"" with port ""Y""
+  dut : entity work.TopModule port map (y => y, w => w, Y1 => Y1);"
+Prob136_m2014_q6,functional-fail,True,,86/100 vettori errati
+Prob137_fsm_serial,analysis-error,,,"gen.vhd:2:343:error: duplicate choice with choice at line 2:762
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Finite"
+Prob138_2012_q2fsm,no-entity,,,
+Prob139_2013_q2bfsm,functional-fail,True,,100/100 vettori errati
+Prob140_fsm_hdlc,analysis-error,,,"gen.vhd:2:1648:error: an identifier cannot finish with '_'
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity FiniteState"
+Prob141_count_clock,functional-fail,True,std_logic_unsigned,100/100 vettori errati
+Prob142_lemmings2,analysis-error,,,"gen.vhd:2:366:error: identifier ""aaah"" already used for a declaration
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity "
+Prob143_fsm_onehot,functional-fail,True,,256/256 vettori errati
+Prob144_conwaylife,interface-mismatch,,,"tb.vhd:18:67:error: signal ""data"" is not an interface name
+  dut : entity work.TopModule port map (clk => clk, load => l"
+Prob145_circuit8,no-entity,,,
+Prob146_fsm_serialdata,functional-fail,True,,4/100 vettori errati
+Prob147_circuit10,no-entity,,,
+Prob148_2013_q2afsm,analysis-error,,,"gen.vhd:2:407:error: no declaration for ""a""
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( Clk : "
+Prob149_ece241_2013_q4,functional-fail,True,,77/100 vettori errati
+Prob150_review2015_fsmonehot,analysis-error,,,"gen.vhd:2:452:error: unexpected token 'wait' in a primary
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is"
+Prob151_review2015_fsm,analysis-error,,,"gen.vhd:2:399:error: identifier ""ack"" already used for a declaration
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity F"
+Prob152_lemmings3,analysis-error,,,"gen.vhd:2:976:error: only one type of logical operators may be used to combine relation
+library IEEE; use IEEE.STD_LOGIC"
+Prob153_gshare,analysis-error,,,"gen.vhd:2:848:error: string length does not match that of anonymous integer subtype defined at gen.vhd:2:728
+library IEE"
+Prob154_fsm_ps2data,no-entity,,,
+Prob155_lemmings4,analysis-error,,,"gen.vhd:2:395:error: identifier ""digging"" already used for a declaration
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; enti"
+Prob156_review2015_fancytimer,functional-fail,True,numeric_std,80/100 vettori errati

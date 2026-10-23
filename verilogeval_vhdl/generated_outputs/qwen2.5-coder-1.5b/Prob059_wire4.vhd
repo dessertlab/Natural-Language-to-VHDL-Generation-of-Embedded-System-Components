@@ -1,0 +1,1 @@
+TopModule is a circuit with input signals a, b, c and output signals w, x, y, z. The behavior of this circuit is defined as a process that assigns the value of a to w, the value of b to x, the value of b to y, and the value of c to z.

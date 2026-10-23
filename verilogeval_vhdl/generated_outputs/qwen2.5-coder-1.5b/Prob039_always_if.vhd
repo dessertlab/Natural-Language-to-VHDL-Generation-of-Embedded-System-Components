@@ -1,0 +1,1 @@
+TopModule is a component with b as input std_logic signal, a as input std_logic signal, sel_b1 as input std_logic signal, sel_b2 as input std_logic signal, out_assign as output std_logic signal, out_always as output std_logic signal

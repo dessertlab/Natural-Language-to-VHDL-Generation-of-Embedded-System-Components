@@ -1,0 +1,1 @@
+TopModule is a combinational circuit with input signals x3, x2, x1 as std_logic type and output signal f as std_logic type. The truth table for the circuit is as follows: x3 | x2 | x1 | f 0 | 0 | 0 | 0 0 | 0 | 1 | 0 0 | 1 | 0 | 1 0 | 1 | 1 | 1 1 | 0 | 0 | 0 1 | 0 | 1 | 1 1 | 1 | 0 | 0 1 | 1 | 1 | 1

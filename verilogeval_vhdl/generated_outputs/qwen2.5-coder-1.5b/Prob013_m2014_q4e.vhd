@@ -1,0 +1,1 @@
+TopModule is a component with In1 as input std_logic signal, In2 as input std_logic signal, Out_P as output std_logic signal; architecture Behavioral of TopModule is begin Out_P <= In1 nor In2; end architecture;

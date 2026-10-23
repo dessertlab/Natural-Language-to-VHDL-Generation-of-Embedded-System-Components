@@ -1,0 +1,1 @@
+TopModule is a component with a generic COUNT_MAX of type integer with default 500000, and has input signals a and b of type std_logic, and output signal out_p of type std_logic. The component TopModule is defined with generics COUNT_MAX of type integer with default 500000, and has input signals a and b of type std_logic, and output signal out_p of type std_logic.

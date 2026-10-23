@@ -1,0 +1,1 @@
+TopModule is a component with clk as input std_logic signal, areset as input std_logic signal, train_valid as input std_logic signal, train_taken as input std_logic signal, state as output std_logic_vector of 2 bit

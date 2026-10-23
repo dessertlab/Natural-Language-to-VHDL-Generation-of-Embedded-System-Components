@@ -1,0 +1,31 @@
+1, library import
+2, entity definition with generic
+3, entity definition without generic
+4, process
+5, after assignment
+6, signal definition
+7, enumerative data type
+8, if statement condition
+9, signal assignment
+10, conditional assignment
+11, case statement
+12, increment/decrement of variables/signals
+13, architecture definition
+14, component definition
+15, component instantiation
+16, wait instructions
+17, complex process
+18, signal definition for interfaces
+19, constant definition
+20, for generate construct
+21, array definition
+22, element array assignment
+23, generic definition
+24, memory indexing
+25, selected signal assignment
+26, assertion statement
+27, complex component definition
+28, variable definition and assignment
+29, shift operation
+30, concatenate
+31, high-level comments

@@ -1,0 +1,1 @@
+TopModule is a component with b0 as input std_logic_vector signal of 8 bit, b1 as input std_logic_vector signal of 8 bit, borrow_in as input std_logic signal, carry_out as output std_logic signal, p as input std_logic_vector signal of 16 bit, q as output std_logic_vector signal of 8 bit, overflow as output std_logic signal

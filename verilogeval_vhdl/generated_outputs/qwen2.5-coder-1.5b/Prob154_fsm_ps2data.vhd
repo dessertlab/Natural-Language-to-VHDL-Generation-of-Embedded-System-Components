@@ -1,0 +1,1 @@
+TopModule is a component with clk as input std_logic signal, reset as input std_logic signal, in_p as input std_logic signal, out_bytes as output std_logic_vector signal of 24 bit, done as output std_logic signal

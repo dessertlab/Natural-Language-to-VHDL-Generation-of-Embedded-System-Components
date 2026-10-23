@@ -1,0 +1,1 @@
+TopModule: in_p : in 100 bit; out_and, out_or, out_xor : out 3 bit; entity with clock as input std_logic_vector signal clock : in std_logic; entity TopModule is port ( in_p : in STD_LOGIC_VECTOR ( 99 downto 0 ); out_and : out STD_LOGIC_VECTOR ( 2 downto 0 ); out_or : out STD_LOGIC_VECTOR ( 2 downto 0 ); out_xor : out STD_LOGIC_VECTOR ( 2 downto 0 ) ); end entity ;

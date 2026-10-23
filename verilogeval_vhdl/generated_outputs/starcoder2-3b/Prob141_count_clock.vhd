@@ -1,0 +1,1 @@
+signal clk, reset, ena : in std_logic; signal pm, hh, mm, ss : out std_logic_vector(7 downto 0);; clock_divider: process (clk) begin if rising_edge(clk) then if reset = '1' then hh <= "12"; mm <= "00"; ss <= "00"; elsif ena = '1' then ss <= ss + 1; if ss = 59 then mm <= mm + 1; if mm = 59 then hh <= hh + 1; end if; end if; end if; end process;

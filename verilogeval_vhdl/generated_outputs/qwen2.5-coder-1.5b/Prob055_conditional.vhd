@@ -1,0 +1,1 @@
+TopModule is a component with b as input std_logic_vector signal of 8 bit, c as input std_logic_vector signal of 8 bit, d as input std_logic_vector signal of 8 bit, a as input std_logic_vector signal of 8 bit, min as output std_logic_vector signal of 8 bit; a < b;

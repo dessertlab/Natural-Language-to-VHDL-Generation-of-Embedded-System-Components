@@ -1,0 +1,1 @@
+TopModule: circuit TopModule ( clk: in STD_LOGIC; load: in STD_LOGIC; ena: in STD_LOGIC_VECTOR(1 downto 0); data: in STD_LOGIC_VECTOR (99 downto 0); q: out STD_LOGIC_VECTOR (99 downto 0)); end circuit;

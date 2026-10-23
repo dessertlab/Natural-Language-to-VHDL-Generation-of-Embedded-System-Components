@@ -1,0 +1,1 @@
+TopModule is a component with clk as input std_logic signal, reset as input std_logic signal, x as input std_logic signal, z as output std_logic signal. The finite-state machine is defined with states 000, 001, 010, 011, 100, 101, 110, 111. The code is written in VHDL.

@@ -1,0 +1,1 @@
+TopModule is a component with InP as input std_logic_vector of 3 bit, OutP as output std_logic_vector of 2 bit; entity is a statement that defines an entity named Counter with input and output std_logic_vector signals of 8 bit.

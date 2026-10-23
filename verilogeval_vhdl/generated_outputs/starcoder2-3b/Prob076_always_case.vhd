@@ -1,0 +1,1 @@
+sel : in STD_LOGIC_VECTOR (2 downto 0); data0 : in STD_LOGIC_VECTOR (3 downto 0); data1 : in STD_LOGIC_VECTOR (3 downto 0); data2 : in STD_LOGIC_VECTOR (3 downto 0); data3 : in STD_LOGIC_VECTOR (3 downto 0); data4 : in STD_LOGIC_VECTOR (3 downto 0); data5 : in STD_LOGIC_VECTOR (3 downto 0); out_p : out STD_LOGIC_VECTOR (3 downto 0);

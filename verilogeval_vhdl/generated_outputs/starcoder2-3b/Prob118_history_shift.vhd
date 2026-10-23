@@ -1,0 +1,1 @@
+class TopModule is port ( clk: in STD_LOGIC; areset: in STD_LOGIC; predict_valid: in STD_LOGIC; predict_taken: in STD_LOGIC; train_mispredicted: in STD_LOGIC; train_taken: in STD_LOGIC; 32-bit signal train_history: in STD_LOGIC_VECTOR (31 downto 0); predict_history: out STD_LOGIC_VECTOR (31 downto 0)); end TopModule;

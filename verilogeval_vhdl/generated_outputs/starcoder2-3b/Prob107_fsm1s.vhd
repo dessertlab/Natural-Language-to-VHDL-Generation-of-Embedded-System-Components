@@ -1,0 +1,1 @@
+TopModule: in_p: in std_logic; clk: in std_logic; reset: in std_logic; out_p: out std_logic; signal B: mamba.StateMachine with B <= '0', A <= '1'; B <= '1' after B; A <= '0' after A; B <= '0' after B; B <= '1' after B;

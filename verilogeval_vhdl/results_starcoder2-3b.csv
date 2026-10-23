@@ -1,0 +1,171 @@
+problem,result,synth,ctx_repair,detail
+Prob001_zero,no-entity,,,
+Prob002_m2014_q4i,no-entity,,,
+Prob003_step_one,no-entity,,,
+Prob004_vector2,no-entity,,,
+Prob005_notgate,no-entity,,,
+Prob006_vectorr,no-entity,,,
+Prob007_wire,no-entity,,,
+Prob008_m2014_q4h,no-entity,,,
+Prob009_popcount3,no-entity,,,
+Prob010_mt2015_q4a,no-entity,,,
+Prob011_norgate,no-entity,,,
+Prob012_xnorgate,no-entity,,,
+Prob013_m2014_q4e,no-entity,,,
+Prob014_andgate,no-entity,,,
+Prob015_vector1,analysis-error,,,"gen.vhd:5:1:error: missing entity, architecture, package or configuration
+TopModule: in_p : in std_logic_vector(15 downt"
+Prob016_m2014_q4j,analysis-error,,,"gen.vhd:5:1:error: missing entity, architecture, package or configuration
+circuit TopModule(x, y) is begin process (x, y"
+Prob017_mux2to1v,no-entity,,,
+Prob018_mux256to1,no-entity,,,
+Prob019_m2014_q4f,no-entity,,,
+Prob020_mt2015_eq2,no-entity,,,
+Prob021_mux256to1v,analysis-error,,,"gen.vhd:5:1:error: missing entity, architecture, package or configuration
+module TopModule is port( in_p : in std_logic_"
+Prob022_mux2to1,no-entity,,,
+Prob023_vector100r,no-entity,,,
+Prob024_hadd,no-entity,,,
+Prob025_reduction,no-entity,,,
+Prob026_alwaysblock1,no-entity,,,
+Prob027_fadd,no-entity,,,
+Prob028_m2014_q4a,no-entity,,,
+Prob029_m2014_q4g,no-entity,,,
+Prob030_popcount255,no-entity,,,
+Prob031_dff,golden-compile-error,,,"tb.sv:11: error: Cannot perform procedural assignment to variable 'q' because it is also continuously assigned.
+tb.sv:16"
+Prob032_vector0,no-entity,,,
+Prob033_ece241_2014_q1c,no-entity,,,
+Prob034_dff8,analysis-error,,,"gen.vhd:5:1:error: missing entity, architecture, package or configuration
+TopModule: inputs clk d : in std_logic_vector("
+Prob035_count1to10,no-entity,,,
+Prob036_ringer,no-entity,,,
+Prob037_review2015_count1k,no-entity,,,
+Prob038_count15,no-entity,,,
+Prob039_always_if,no-entity,,,
+Prob040_count10,no-entity,,,
+Prob041_dff8r,no-entity,,,
+Prob042_vector4,no-entity,,,
+Prob043_vector5,analysis-error,,,"gen.vhd:2:383:error: '~' is not a VHDL operator, use 'not'
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule i"
+Prob044_vectorgates,no-entity,,,
+Prob045_edgedetect2,no-entity,,,
+Prob046_dff8p,no-entity,,,
+Prob047_dff8ar,no-entity,,,
+Prob048_m2014_q4c,no-entity,,,
+Prob049_m2014_q4b,no-entity,,,
+Prob050_kmap1,no-entity,,,
+Prob051_gates4,no-entity,,,
+Prob052_gates100,analysis-error,,,"gen.vhd:5:1:error: missing entity, architecture, package or configuration
+TopModule: in_p : in 100 bit; out_and, out_or,"
+Prob053_m2014_q4d,no-entity,,,
+Prob054_edgedetect,no-entity,,,
+Prob055_conditional,no-entity,,,
+Prob056_ece241_2013_q7,no-entity,,,
+Prob057_kmap2,no-entity,,,
+Prob058_alwaysblock2,no-entity,,,
+Prob059_wire4,no-entity,,,
+Prob060_m2014_q4k,no-entity,,,
+Prob061_2014_q4a,no-entity,,,
+Prob063_review2015_shiftcount,no-entity,,,
+Prob064_vector3,no-entity,,,
+Prob065_7420,no-entity,,,
+Prob066_edgecapture,no-entity,,,
+Prob067_countslow,no-entity,,,
+Prob068_countbcd,no-entity,,,
+Prob069_truthtable1,no-entity,,,
+Prob070_ece241_2013_q2,no-entity,,,
+Prob071_always_casez,no-entity,,,
+Prob072_thermostat,analysis-error,,,"gen.vhd:5:1:error: missing entity, architecture, package or configuration
+TopModule: Module Port (Mode) (Too_Cold) (Too_"
+Prob073_dff16e,no-entity,,,
+Prob074_ece241_2014_q4,no-entity,,,
+Prob075_counter_2bc,no-entity,,,
+Prob076_always_case,no-entity,,,
+Prob077_wire_decl,no-entity,,,
+Prob078_dualedge,elaboration-error,,,"tb.vhd:15:9:error: no architecture in library for entity ""TopModule""
+  dut : entity work.TopModule port map (clk => clk,"
+Prob079_fsm3onehot,no-entity,,,
+Prob080_timer,no-entity,,,
+Prob081_7458,elaboration-error,,,"tb.vhd:41:9:error: no architecture in library for entity ""top_module""
+  dut : entity work.top_module port map (p1a => p1"
+Prob082_lfsr32,no-entity,,,
+Prob083_mt2015_q4b,no-entity,,,
+Prob084_ece241_2013_q12,no-entity,,,
+Prob085_shift4,no-entity,,,
+Prob086_lfsr5,no-entity,,,
+Prob087_gates,no-entity,,,
+Prob088_ece241_2014_q5b,no-entity,,,
+Prob089_ece241_2014_q5a,no-entity,,,
+Prob090_circuit1,no-entity,,,
+Prob091_2012_q2b,no-entity,,,
+Prob092_gatesv100,no-entity,,,
+Prob093_ece241_2014_q3,no-entity,,,
+Prob094_gatesv,no-entity,,,
+Prob095_review2015_fsmshift,elaboration-error,,,"tb.vhd:15:9:error: no architecture in library for entity ""TopModule""
+  dut : entity work.TopModule port map (clk => clk,"
+Prob096_review2015_fsmseq,no-entity,,,
+Prob097_mux9to1v,no-entity,,,
+Prob098_circuit7,no-entity,,,
+Prob099_m2014_q6c,no-entity,,,
+Prob100_fsm3comb,no-entity,,,
+Prob101_circuit4,no-entity,,,
+Prob102_circuit3,no-entity,,,
+Prob103_circuit2,no-entity,,,
+Prob104_mt2015_muxdff,no-entity,,,
+Prob105_rotate100,no-entity,,,
+Prob106_always_nolatches,no-entity,,,
+Prob107_fsm1s,no-entity,,,
+Prob108_rule90,no-entity,,,
+Prob109_fsm1,no-entity,,,
+Prob110_fsm2,no-entity,,,
+Prob111_fsm2s,no-entity,,,
+Prob112_always_case2,no-entity,,,
+Prob113_2012_q1g,no-entity,,,
+Prob114_bugs_case,no-entity,,,
+Prob115_shift18,no-entity,,,
+Prob116_m2014_q3,analysis-error,,,"gen.vhd:5:1:error: missing entity, architecture, package or configuration
+Karnaugh_Map_4bit: entity top_module is port(x"
+Prob117_circuit9,no-entity,,,
+Prob118_history_shift,no-entity,,,
+Prob119_fsm3,no-entity,,,
+Prob120_fsm3s,no-entity,,,
+Prob121_2014_q3bfsm,no-entity,,,
+Prob122_kmap4,no-entity,,,
+Prob124_rule110,no-entity,,,
+Prob125_kmap3,no-entity,,,
+Prob126_circuit6,no-entity,,,
+Prob127_lemmings1,no-entity,,,
+Prob128_fsm_ps2,no-entity,,,
+Prob129_ece241_2013_q8,no-entity,,,
+Prob130_circuit5,no-entity,,,
+Prob131_mt2015_q4,no-entity,,,
+Prob133_2014_q3fsm,no-entity,,,
+Prob134_2014_q3c,no-entity,,,
+Prob135_m2014_q6b,no-entity,,,
+Prob136_m2014_q6,no-entity,,,
+Prob137_fsm_serial,no-entity,,,
+Prob138_2012_q2fsm,no-entity,,,
+Prob139_2013_q2bfsm,no-entity,,,
+Prob140_fsm_hdlc,no-entity,,,
+Prob141_count_clock,no-entity,,,
+Prob142_lemmings2,analysis-error,,,"gen.vhd:5:1:error: missing entity, architecture, package or configuration
+Top: entity TopModule is port ( clk: in STD_LO"
+Prob143_fsm_onehot,no-entity,,,
+Prob144_conwaylife,no-entity,,,
+Prob145_circuit8,no-entity,,,
+Prob146_fsm_serialdata,analysis-error,,,"gen.vhd:7:1:error: 'end' is expected instead of end of file
+
+^
+gen.vhd:7:1:error: 'if' is expected instead of end of fil"
+Prob147_circuit10,no-entity,,,
+Prob148_2013_q2afsm,no-entity,,,
+Prob149_ece241_2013_q4,no-entity,,,
+Prob150_review2015_fsmonehot,no-entity,,,
+Prob151_review2015_fsm,no-entity,,,
+Prob152_lemmings3,no-entity,,,
+Prob153_gshare,no-entity,,,
+Prob154_fsm_ps2data,no-entity,,,
+Prob155_lemmings4,elaboration-error,,,"tb.vhd:30:9:error: no architecture in library for entity ""Lemmings""
+  dut : entity work.Lemmings port map (clk => clk, a"
+Prob156_review2015_fancytimer,no-entity,,,

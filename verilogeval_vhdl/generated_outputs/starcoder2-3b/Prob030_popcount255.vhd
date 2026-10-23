@@ -1,0 +1,1 @@
+TopModule: in_p : in STD_LOGIC_VECTOR (254 downto 0); out_p : out STD_LOGIC_VECTOR (7 downto 0);; population_count: process (in_p) begin count <= 0; for i in 0 to 254 loop if in_p(i) = '1' then count := count + 1; end if; end loop; out_p <= std_logic_vector(count); end process;

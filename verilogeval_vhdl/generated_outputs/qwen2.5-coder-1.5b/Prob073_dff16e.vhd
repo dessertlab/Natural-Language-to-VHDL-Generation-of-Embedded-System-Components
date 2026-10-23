@@ -1,0 +1,1 @@
+TopModule is a component with clk as input std_logic signal, resetn as input std_logic signal, byteena as input std_logic_vector signal of 2 bit, d as input std_logic_vector signal of 16 bit, q as output std_logic_vector signal of 16 bit

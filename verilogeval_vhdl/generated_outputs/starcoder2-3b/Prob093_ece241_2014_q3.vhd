@@ -1,0 +1,1 @@
+TopModule: IO c : in STD_LOGIC; d : in STD_LOGIC; mux_in : out STD_LOGIC_VECTOR (3 downto 0); begin process (c, d) begin if (c = '0' and d = '0') then mux_in <= "0000"; elsif (c = '0' and d = '1') then mux_in <= "0001"; elsif (c = '1' and d = '1') then mux_in <= "1111"; elsif (c = '1' and d = '0') then mux_in <= "0110"; end if ; end process ; end IO;

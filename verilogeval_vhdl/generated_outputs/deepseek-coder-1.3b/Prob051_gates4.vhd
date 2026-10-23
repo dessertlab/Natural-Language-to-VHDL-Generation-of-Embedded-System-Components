@@ -1,0 +1,1 @@
+circuit TopModule : entity work.FourBitANDGate(dataflow) port map(in_p(3 downto 0), out_and); out_or <= in_p(3) or in_p(2) or in_p(1) or in_p(0); out_xor <= in_p(3) xor in_p(2) xor in_p(1) xor in_p(0); end TopModule;

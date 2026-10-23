@@ -1,0 +1,1 @@
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( X : in STD_LOGIC; Y : in STD_LOGIC; Z : out STD_LOGIC); end TopModule; architecture Behavioral of TopModule is begin X_sub: A port map(X, Y); Y_sub: A port map(X, Y); Z <= X or Y; X_sub2: B port map(X, Y); Y_sub2: B port map(X, Y); end Behavioral;

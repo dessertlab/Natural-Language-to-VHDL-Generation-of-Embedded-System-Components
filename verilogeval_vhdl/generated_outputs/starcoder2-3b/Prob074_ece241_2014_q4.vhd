@@ -1,0 +1,1 @@
+TopModule: in std_logic_vector(1 downto 0); z <= (xnor(a,b) xor (not a and not b)) or (not (a and not b) or (not a xor not b)); ff_0 : D_Flip_Flop port map(clk, rst, d_in); ff_1 : D_Flip_Flop port map(ff_0.q, ff_0.d); ff_2 : D_Flip_Flop port map(ff_1.q, ff_1.d); nor_0 : NOR_Gate port map(ff_0.q, ff_1.q, ff_2.q);

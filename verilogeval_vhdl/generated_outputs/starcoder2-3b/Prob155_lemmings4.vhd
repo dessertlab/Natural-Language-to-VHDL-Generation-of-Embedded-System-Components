@@ -1,0 +1,1 @@
+entity Lemmings is port ( clk: in std_logic; areset: in std_logic; bump_left: in std_logic; bump_right: in std_logic; ground: in std_logic; dig: in std_logic; walk_left: out std_logic; walk_right: out std_logic; aaah: out std_logic; digging: out std_logic ); end Lemmings;

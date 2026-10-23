@@ -1,0 +1,1 @@
+TopModule is a component with clk as input std_logic signal, d as input std_logic signal, q as output std_logic signal; define a case statement of state_code signal with cases STARTUP, NORMAL, SLEEP, HALT

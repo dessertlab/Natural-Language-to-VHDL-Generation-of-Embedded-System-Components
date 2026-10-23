@@ -1,0 +1,1 @@
+TopModule is a component with clk as input std_logic signal, reset as input std_logic signal, in_p as input std_logic signal, out_p as output std_logic signal. The state transition table is defined with the signals state, next_state, in_p, out_p as input std_logic signals, and the signals A, B, C, D as output std_logic signals.

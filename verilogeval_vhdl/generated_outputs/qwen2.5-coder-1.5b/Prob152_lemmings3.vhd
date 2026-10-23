@@ -1,0 +1,1 @@
+signal TopModule_clk : std_logic; signal TopModule_areset : std_logic; signal TopModule_bump_left : std_logic; signal TopModule_bump_right : std_logic; signal TopModule_ground : std_logic; signal TopModule_dig : std_logic; type LemmingState is (walk_left, walk_right, aaah, digging, switching); signal Lemming : LemmingState := walk_left;

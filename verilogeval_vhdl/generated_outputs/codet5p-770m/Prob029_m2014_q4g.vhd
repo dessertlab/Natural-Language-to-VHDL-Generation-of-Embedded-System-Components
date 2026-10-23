@@ -1,0 +1,1 @@
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( In1 : in STD_LOGIC; In2 : in STD_LOGIC; In3 : in STD_LOGIC; Out_P : out STD_LOGIC); end TopModule; architecture Behavioral of TopModule is begin process (In1, In2, In3) variable xor : std_logic; begin xor := (In1 xor In2 xor In3); Out_P <= xor; end process ; end Behavioral;

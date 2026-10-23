@@ -1,0 +1,1 @@
+TopModule : entity with clk as input std_logic signal, reset as input std_logic signal, data as input std_logic_vector(3 downto 0), done_counting as input std_logic signal, ack as input std_logic signal, shift_ena as output std_logic, counting as output std_logic, done as output std_logic; end entity TopModule;

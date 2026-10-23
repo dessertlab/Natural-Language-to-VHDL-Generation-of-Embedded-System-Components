@@ -1,0 +1,1 @@
+TopModule: in a: in 7 downto 0; b: in 7 downto 0; s: out 7 downto 0; overflow: out std_logic; begin process (a, b) begin s <= a + b; overflow <= a > std_logic_vector(a) and b > std_logic_vector(b); end process; end TopModule;

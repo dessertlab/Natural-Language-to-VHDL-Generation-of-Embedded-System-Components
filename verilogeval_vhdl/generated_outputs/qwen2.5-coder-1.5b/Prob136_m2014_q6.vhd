@@ -1,0 +1,1 @@
+TopModule is a VHDL entity with clk as input std_logic signal, reset as input std_logic signal, w as input std_logic signal, z as output std_logic signal. The architecture of TopModule is defined with a process that implements a state machine.

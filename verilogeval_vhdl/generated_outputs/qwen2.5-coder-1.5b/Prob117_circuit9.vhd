@@ -1,0 +1,1 @@
+TopModule is a sequential circuit with clk as input std_logic signal, a as input std_logic signal, q as output std_logic signal. Define a constant TIMEOUT_VAL with type integer and initialize it to 1000.

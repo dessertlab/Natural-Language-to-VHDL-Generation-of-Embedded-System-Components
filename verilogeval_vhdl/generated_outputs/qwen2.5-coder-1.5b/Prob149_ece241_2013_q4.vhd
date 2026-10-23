@@ -1,0 +1,1 @@
+TopModule is a VHDL entity with clk as input std_logic signal, reset as input std_logic signal, s as input std_logic_vector of 3 bit, fr2, fr1, fr0, dfr as output std_logic signals, and water_level as input std_logic signal with default value 0.

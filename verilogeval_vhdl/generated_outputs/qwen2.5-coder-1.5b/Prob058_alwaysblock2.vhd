@@ -1,0 +1,1 @@
+TopModule is an entity with clk as input std_logic signal, a as input std_logic signal, b as input std_logic signal, out_assign as output std_logic signal, out_always_comb as output std_logic signal, out_always_ff as output std_logic signal.

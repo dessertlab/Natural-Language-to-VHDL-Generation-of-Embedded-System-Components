@@ -1,0 +1,1 @@
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( Vec : in STD_LOGIC_VECTOR (2 downto 0); OutV, O2, O1, O0 : out STD_LOGIC); end TopModule; architecture Behavioral of TopModule is begin process (Vec) variable temp : std_logic_vector(2 downto 0); begin temp := Vec; O0 <= temp(0); O1 <= temp(1); O2 <= temp(2); OutV <= temp; end process; end Behavioral;

@@ -1,0 +1,1 @@
+TopModule is an entity with clk as input std_logic signal, d as input std_logic_vector of 8 bits, q as output std_logic_vector of 8 bits. The architecture of TopModule is defined with a process that iterates over 8 clock cycles, setting the value of q at each cycle based on the value of d at that cycle.

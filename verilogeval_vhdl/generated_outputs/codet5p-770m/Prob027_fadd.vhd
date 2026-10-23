@@ -1,0 +1,1 @@
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( A : in STD_LOGIC; B : in STD_LOGIC; CIN : in STD_LOGIC; COUT : out STD_LOGIC; Sum : out STD_LOGIC); end TopModule; architecture Behavioral of TopModule is begin Sum <= A xor B xor CIN; end Behavioral;

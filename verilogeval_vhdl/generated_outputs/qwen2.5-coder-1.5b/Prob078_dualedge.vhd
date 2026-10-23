@@ -1,0 +1,1 @@
+TopModule: entity (clk, d) is port (t_clk, t_d: in std_logic; t_q: out std_logic); end entity; architecture Behavioral of TopModule is signal prev_q: std_logic; begin process (clk) begin if rising_edge(clk) then prev_q <= d; elsif falling_edge(clk) then prev_q <= not prev_q; end if; end process; t_q <= prev_q; end architecture;

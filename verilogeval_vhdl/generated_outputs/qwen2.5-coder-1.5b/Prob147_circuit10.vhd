@@ -1,0 +1,1 @@
+TopModule is a sequential circuit with clock as input std_logic signal, reset as input std_logic signal, loadAQ as input std_logic signal, selM, selAQ, selF, sub, stop_cu as input std_logic signals, count as input std_logic_vector of 3 bit, p as output std_logic_vector of 4 bit, q as output std_logic_vector of 8 bit

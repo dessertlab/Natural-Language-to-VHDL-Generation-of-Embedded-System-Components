@@ -1,0 +1,1 @@
+TopModule is a component with clk as input std_logic signal, x as input std_logic signal, z as output std_logic signal. Define a finite state machine with the signals clock, reset, start as input std_logic signals, and state as control signal. The behavior of the finite state machine is described in a sequential manner.

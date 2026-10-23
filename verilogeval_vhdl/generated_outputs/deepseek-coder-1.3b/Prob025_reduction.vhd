@@ -1,0 +1,1 @@
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( In_P : in STD_LOGIC_VECTOR (7 downto 0); Parity : out STD_LOGIC); end TopModule; architecture Behavioral of TopModule is begin process (In_P) variable temp: std_logic; begin for i in 0 to 7 loop temp := temp xor In_P(i); end loop ; Parity <= temp; end process ; end Behavioral;

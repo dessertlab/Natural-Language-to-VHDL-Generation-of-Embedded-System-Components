@@ -1,0 +1,1 @@
+TopModule is a component with a as input std_logic, b as input std_logic, sum as output std_logic, cout as output std_logic; half_adder is the entity with A and B as input std_logic signals, Sum and Cout as output std_logic signals

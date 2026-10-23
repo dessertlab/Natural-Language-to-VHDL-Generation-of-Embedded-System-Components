@@ -1,0 +1,1 @@
+TopModule: entity with clk as input std_logic, in_p as input std_logic, out_p as output std_logic; architecture Behavioral of TopModule is signal d: std_logic; begin d <= (out_p xor in); end architecture;

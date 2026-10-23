@@ -1,0 +1,1 @@
+TopModule: ModulePort (a: in STD_LOGIC; b: in STD_LOGIC; out_and: out STD_LOGIC; out_or: out STD_LOGIC; out_xor: out STD_LOGIC; out_nand: out STD_LOGIC; out_nor: out STD_LOGIC; out_xnor: out STD_LOGIC; out_anotb: out STD_LOGIC); end ModulePort;

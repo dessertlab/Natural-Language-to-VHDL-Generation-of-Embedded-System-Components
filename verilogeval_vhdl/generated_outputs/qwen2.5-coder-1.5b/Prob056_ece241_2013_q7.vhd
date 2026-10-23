@@ -1,0 +1,1 @@
+TopModule is a component with clk as input std_logic signal, j as input std_logic signal, k as input std_logic signal, q as output std_logic signal. The truth table is as follows: J | K | Q 0 | 0 | Qold 0 | 1 | 0 1 | 0 | 1 1 | 1 | ~Qold

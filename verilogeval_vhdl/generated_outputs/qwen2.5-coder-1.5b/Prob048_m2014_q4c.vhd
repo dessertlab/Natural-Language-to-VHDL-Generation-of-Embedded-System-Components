@@ -1,0 +1,1 @@
+TopModule: entity with clk, d, r as input std_logic signals, q as output std_logic signal; architecture Behavioral of TopModule is signal reg: std_logic; begin process (clk) begin if rising_edge(clk) then if reset = '1' then reg <= '0'; else reg <= d; end if; end if; end process; q <= reg; end architecture;

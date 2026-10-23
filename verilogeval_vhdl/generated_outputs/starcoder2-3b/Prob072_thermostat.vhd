@@ -1,0 +1,1 @@
+TopModule: Module Port (Mode) (Too_Cold) (Too_Hot) (Fan_On) Heater AirCon Fan; entity TopModule is port (Mode: in std_logic; Too_Cold: in std_logic; Too_Hot: in std_logic; Fan_On: in std_logic; Heater: out std_logic; AirCon: out std_logic; Fan: out std_logic); end entity TopModule;

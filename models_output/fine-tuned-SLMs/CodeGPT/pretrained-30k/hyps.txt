@@ -1,0 +1,326 @@
+assert false report "float_pkg is not used in simulation" severity failure;
+library techmap; use techmap.all; entity i_ldac_cpy is port ( i_ldac_cpy : in std_logic; i_ldac : in std_logic; i_ldac_cpy_nxt : out std_logic ); end i_ldac_cpy; architecture behavioral of i_ldac_cpy is begin end architecture behavioral;
+EMPY PRED
+EMPY PRED
+sbox_inst : sbox port map (data_out_temp1,data_out_temp2);
+component GPIO is generic (BitWidth: integer := 8); port (IO_sel: in std_logic; IO: in std_logic_vector(BitWidth-1 downto 0); WrtData: in std_logic_vector(BitWidth-1 downto 0); RdData: out std_logic_vector(BitWidth-1 downto 0)); end component;
+component clock_divider is generic ( clock_frequency_in : integer := 100000000; clock_frequency_out : integer := 500 ); port ( clock_in : in STD_LOGIC; reset : in STD_LOGIC; clock_out : out STD_LOGIC ); end component;
+component GPIO is generic (BitWidth: integer := 8); port (IO_sel: in std_logic; IO: in std_logic_vector(BitWidth-1 downto 0); WrtData: in std_logic_vector(BitWidth-1 downto 0); RdData: out std_logic_vector(BitWidth-1 downto 0)); end component;
+EMPY PRED
+data_2_o <= t_dac_val_2_reg when rst_n_i = '1' else (others => '0');
+signal clk : std_logic;
+signal input : std_logic;
+i_cs_fe_tk <= '1' when rst_n_i = '1' else '0'; i_ldac_cpy <= '1' when rst_n_i = '1' else '0'; i_ldac_cpy <= '1' when rst_n_i = '1' else '0';
+cs_i <= t_cs_fe_tk when rst_n_i = '1' else '0'; signal t_cs_fe_tk : std_logic
+anodes(7 downto 0) <= (others => '0');
+output : out std_logic_vector(63 downto 0);
+signal i_scl : std_logic; i_sda <= '0'; i_ldac <= '0'; i_ldac_cnt <= 1;
+data_3_o : out std_logic_vector(15 downto 0);
+signal clk_i : std_logic;
+signal scl_o : std_logic;
+signal input : std_logic;
+signal i_sck_cpy : std_logic; if( rst_n = '1') then i_sck_cpy <= '0'; end if;
+EMPY PRED
+data_5_o => t_dac_val_5
+signal rst_n : std_logic;
+EMPY PRED
+architecture cypher_layer_1 of cypher_layer_1 is begin process (clock, rst, seed_in, seed_out) begin if (rst = '1') then data_valid <= '0'; data_out <= (others => '0'); elsif (rising_edge(clock)) then case seed_in is when "0000" => data_valid <= '1'; when "0001" => data_valid <= '0'; when "0010" => data_valid <= '1'; when "0011" => data_valid <= '0'; when "0100" => data_valid <= '1'; when "0101" => data_valid <= '0'; when "0110" => data_valid <= '1'; when "0111" => data_valid <= '0'; when "1000" => data_valid <= '1'; when "1001" => data_valid <= '0'; when "1010" => data_valid <= '1'; when "1011" => data_valid <= '0'; when "1100" => data_valid <= '1'; when "1101" => data_valid <= '0'; when "1110" => data_valid <= '1'; when "1111" => data_valid <= '0'; when others => data_valid <= '0'; end case ; end if ; end process ;
+entity key_update is port(reg_key_in: in std_logic_vector(79 downto 0); round_counter: in std_logic_vector(4 downto 0); reg_key_out: out std_logic_vector(79 downto 0)); end key_update;
+signal i : std_logic := '0';
+signal data_out_temp1 : std_logic_vector(63 downto 0); signal data_out_temp1 <= (others => '0');
+clock_frequency_out : integer := 500;
+signal s_stb_cpy : std_logic;
+signal i_cs_re_tk : std_logic;
+signal i_data_3_out : std_logic_vector(DOUT_LEN - 1 downto 0);
+key_temp1 <= key_temp1(79 downto 0) & key_temp1(79 downto 1);
+signal sck_re_tk : std_logic;
+signal i_ldac : std_logic;
+signal a : std_logic_vector(2 downto 0) := (others => '0000');
+signal count : std_logic_vector(4 downto 0);
+signal i_data_0 : std_logic_vector(DOUT_LEN - 1 downto 0); entity shift_register is port ( clock, shift_left, shift_right, shift_amount: in std_logic_vector(N-1 downto 0); data_out : out std_logic_vector(N-1 downto 0) ); end shift_register;
+signal i_slc_counter : integer range 0 to 100;
+signal clock : std_logic_vector(DOUT_LEN - 1 downto 0); entity clk_div is port (clk : in std_logic; rst : in std_logic; en : in std_logic; done : out std_logic); end clk_div;
+EMPY PRED
+clock_frequency_out : integer := 5000000;
+signal i_data_0_out : std_logic_vector(DOUT_LEN - 1 downto 0); entity shift_register is port( clock, reset, shift_left, shift_right, shift_amount: in std_logic_vector(N-1 downto 0), data_out_temp1, data_out_temp2, data_out_temp3, data_out_temp4: out std_logic ); end shift_register;
+signal temp : std_logic := '0';
+if(rising_edge(CLK)) then if( CLK = '1' ) then CLK_t <= '0'; end if; end if;
+signal temp_p : std_logic_vector(15 downto 0);
+signal signal_dac_val_3 : std_logic_vector(DAC_D_OUT_LEN - 1 downto 0);
+signal data_4_out : std_logic_vector(DOUT_LEN - 1 downto 0);
+signal i : std_logic := '0';
+signal ytemp : std_logic;
+signal BTN_state : stato := NOT_PRESSED;
+signal i_sck_cpy : std_logic;
+signal i_sck_cpy : integer range 0 to 108; signal i_sck_cpy : std_logic;
+signal output : std_logic := '0';
+signal data_5_out : std_logic_vector(DOUT_LEN - 1 downto 0);
+EMPY PRED
+signal en_tmp: std_logic := '0';
+signal current_state: state := idle;
+signal data_1_out : std_logic_vector(DOUT_LEN - 1 downto 0);
+signal s_dly_counter : integer range 0 to 100 := 0;
+signal temp_shift, temp_fshift : std_logic;
+signal i_data_0 : std_logic_vector(DOUT_LEN - 1 downto 0);
+signal plaintext64: std_logic_vector(63 downto 0) := (others => '0');
+type direction is (LITTLE_ENDIAN, BIG_ENDIAN, DATA_OUT); type data_out is array (0 to 7) of std_logic_vector(7 downto 0);
+type ciao_type is array (0 to 3) of std_logic_vector(6 downto 0);
+type hex_number is array (POSITIVE range <>) of hex_digit;
+clock <= not clock when rising_edge(clock);
+process(clk_i) begin if rising_edge(clk_i) then if rst_n_i = '0' then count <= 0; elsif start_i = '1' then count <= count + 1; end if; end if; end process;
+process(clk) begin if rising_edge(clk) then if rst = '1' then count <= 0; elsif count = count_max then count <= 0; else count <= count + 1; end if; end if; end process;
+if DSETS = 1 then if(r.rndcnt = DSETS - 1) then v.rndcnt <= (others => '0'); else v.rndcnt <= (others => '1'); end if; end if; end if;
+sum <= sum - diff;
+EMPY PRED
+i_cs_re_tk <= '0';
+i_scl_cnt <= DAC_D_IN_LEN and i_scl;
+if i_sr_data(23 downto 16) = x"08" then ; end if;
+xor <= d and d_reg; y <= d_reg;
+process(clk) begin if rising_edge(clk) then if rst = '1' then count <= 0; elsif count = count_max then count <= 0; else count <= count + 1; end if; end if; end process;
+signalprova : stringa1; signalprova(0) <= stringa1(0);prova(1) <= stringa1(1);prova(2) <= stringa1(2);prova(3) <= stringa1(3);
+if(rst_n = '1') then i_scl_cnt <= 0; end if;
+temp_p <= temp_p(0);
+signal i_cs : std_logic; clk_tb : std_logic;
+i_data_0 <= (others => '0');
+signal i_cs : std_logic_vector(i_counter_3 - 1 downto 0);
+i_data_2 <= (others => '0');
+case stop_st is when stop_st =>
+signal_16 <= signal_15(0);
+signal i_scl_cnt : std_logic := '0'; i_sck_cpy <= '0'; i_sck_cpy <= '1';
+i_scl <= '0' when rst_n_i = '1' else '1'; component mux_2_1 is port( A: in STD_LOGIC_VECTOR(2 downto 0); B: in STD_LOGIC_VECTOR(2 downto 0); C: in STD_LOGIC_VECTOR(2 downto 0); Sum: out STD_LOGIC_VECTOR(2 downto 0); Co: out STD_LOGIC_VECTOR(2 downto 0)); end component;
+cout_int <= (N-1)*cout_int;
+signal i_scl_cnt : std_logic := '0'; i_sck_cpy <= '0'; i_sck_cpy <= '1';
+i_sr_data <= (others => '0');
+signal i_done : std_logic; signal i_sck_cpy : std_logic;
+EMPY PRED
+out_signal <= data1 nor data2;
+tempq0 <= temp_p(4); temp_q(5) <= temp_q(3); temp_q(6) <= temp_q(2);
+EMPY PRED
+y <= x; y_temp <= y_temp2; reg_key_in <= key_in;
+if rising_edge(clkB) then if t_clkB = '1' then t_clkB <= '0'; end if; end if;
+output <= operand1 xor operand2;
+EMPY PRED
+stato_corrente <= S0; if rising_edge(clk) then if( rst = '1') then stato_corrente <= S0; Y <= '0'; end if; end if;
+clk_process : process begin TbClockA <= '0'; wait for TbPeriodA/2; TbClockA <= '1'; wait for TbPeriodA/2; end process;
+FF_D <= '0' when (clock'event and clock = '1') else '1';
+clk_tb : in std_logic;
+if rising_edge(clk_in) then if( reset_n = '1') then temp := 25; start_sig <= '1'; temp := temp - 1; end if; end if;
+if rising_edge(clk) then if rst_n = '0' then tick_o_reg <= '0'; reg_count_reg <= 0; reg_count_nxt <= 0; tick_o_reg <= '1'; counter <= 0; end if; end if;
+prova: prova port map(rst=>rst,input=>input,ready=>ready,done=>done);
+sck_edge_ sensitive to clk_i that, on the rising edge of clk_i, if rst_n_i signal is low, set i_sck_cpy signal to '0', otherwise set it to i_scl
+i_start_counter <= 0; t_start <= '0'; t_stb <= '0';
+sck_edge_ sensitive to clk_i that, on the rising edge of clk_i, if rst_n_i signal is low, set i_sck_cpy signal to '0', otherwise set it to i_scl
+sda_o <= i_sda when rst_n_i = '1' else '0';
+y <= (others => '0');
+count_nxt <= count_reg when enable = '0' else count_reg + 1 when count_reg = DIV - 1 else count_reg;
+gmii.tx_dv <= cnt_en when gmiio.tx_en = '1' else '1'; gmii.tx_data_in <= i_scl when rst_n_i = '1' else (others => '0'); gmii.tx_data_out <= i_sda when rst_n_
+i_done <= '0' when rst_n_i = '1' else '1';
+buffer_Full <= '1' when addr_i(11 downto 0) = "1111" else '0'; buffer_Full <= '0' when addr_i(11 downto 0) = "1110" else '1' when addr_i(11 downto 0) = "1111" else '0';
+i_data_1_o <= i_data_1_out when rst_n_i = '1' else (others => '0');
+count_nxt <= count_reg when enable = '0' else 0 when count_reg = DIV - 1 else count_reg + 1;
+case current_state is when idle => ; when primo => ; when secondo => ; when terzo => ; when others => ; end case ;
+case stato_corrente is when S2 => if( i = '0' ) then stato_corrente <= S0; Y <= '0'; end if; end case ;
+done_st <= '1';
+case mode is when AUTO => ; when MANUAL => ; when SEMI_AUTO => ; when OFF => ; when others => ; end case ;
+EMPY PRED
+case BTN_state is when NOT_PRESSED => ; when CHK_PRESSED => ; when PRESSED => ; when CHK_NOT_PRESSED => ; when others => ; end case ;
+wait_stb_st : if( wait_stb_st = '1' ) then ; end if;
+case ra.raddr(2 downto 2) is when "0" => rdata <= (others => '0'); when "1" => rdata <= (others => '1'); when others => rdata <= (others => '0'); end case;
+case current_state is when idle => ; when primo => ; when secondo => ; when terzo => ; when others => ; end case ;
+i_bit_counter <= i_bit_counter + 1;
+CPU_Bitwidth_in <= CPU_Bitwidth_in(CPU_Bitwidth_in'length - 79 downto 0) & CPU_Bitwidth_in;
+i_scl_cnt <= i_scl_cnt + 1;
+gain_value <= gain_value + 12;
+entity deglitcher_testbench is port ( clk : in std_logic; rst : in std_logic; start : in std_logic; count_in : in std_logic_vector(7 downto 0); count_out : out std_logic_vector(7 downto 0)); end entity deglitcher_testbench;
+EMPY PRED
+library IEEE; use IEEE.std_logic_1164.all; entity Top is port ( Clk : in std_logic; Rst : in std_logic; Ain : in std_logic; Bin : in std_logic; Add_Sub: in std_logic; Carry_In : in std_logic; Add_Out : out std_logic; Sum : out std_logic; Carry_Out : out std_logic); end entity Top; architecture Behavioral of Top is begin process (Clk, Rst) begin if (Rst = '1') then Ain <= '0'; Bin <= '0'; Add_Sub <= '0'; Carry_In <= '0'; Sum <= '0'; Carry_Out <= '0'; elsif (rising_edge(Clk)) then if (Add_Sub = '1') then Ain <= '1'; Bin <= '0'; Add_Sub <= '1'; Carry_In <= '1'; Sum <= Sum + Carry_In; Carry_Out <= '1'; elsif (Add_Sub = '0') then Ain <= '0'; Bin <= '0'; Add_Sub <= '0'; Carry_In <= '0'; Sum <= Sum - Carry_In; Carry_Out <= '0'; end if ; end if ; end process ; end architecture ;
+entity add_round_key is port(round_key_in: in std_logic_vector(63 downto 0); data_in: in std_logic_vector(63 downto 0); data_out: out std_logic_vector(63 downto 0)); end add_round_key;
+entity clock_divider is port ( clock: in std_logic; reset: in std_logic; d: in std_logic; y: out std_logic ); end clock_divider;
+entity comparator is port ( clock : in STD_LOGIC; A : in STD_LOGIC_VECTOR (7 downto 0); B : in STD_LOGIC_VECTOR (7 downto 0); IAB : in STD_LOGIC; Output : out STD_LOGIC_VECTOR (7 downto 0)); end comparator;
+component FullAdderSub is Port ( C_in : in STD_LOGIC; A : in STD_LOGIC; B : in STD_LOGIC; Add_Sub: in STD_LOGIC; C_out : out STD_LOGIC; Sum : out STD_LOGIC); end component;
+entity pwm_generator is port (clk : in std_logic; rst_n : in std_logic; enable : in std_logic; data_out : out std_logic); end pwm_generator;
+EMPY PRED
+abox: data_in port map(data_in=>data_out);
+EMPY PRED
+component mux_4_1 is port(a0 : in STD_LOGIC; a1 : in STD_LOGIC; s : in STD_LOGIC; y : out STD_LOGIC); end component;
+component input_handler is generic (COUNT_MAX : integer := 500000); port (row_sel : in std_logic_vector(3 downto 0); clk : in std_logic; reset : in std_logic; key_out : out std_logic_vector(7 downto 0); col_sel : out std_logic_vector(3 downto 0); keypress_out : out std_logic); end component;
+component Decoder is port( X : in STD_LOGIC_VECTOR(9 downto 0); Y : out STD_LOGIC_VECTOR(3 downto 0); Enable : in STD_LOGIC; Enable_Out : out STD_LOGIC); end component;; signal X, Y : std_logic_vector(3 downto 0); Enable, Enable_Out : std_logic; output_data_out : std_logic_vector(7 downto 0); output_data_out_reg: std_logic_vector(7 downto 0);
+component read_pointer port (rptr : in std_logic_vector(4 downto 0);fifo_rd : out std_logic;clk, rst_n, rd : in std_logic; fifo_empty : out std_logic); end component;
+component RST port (RST : in std_logic; ADDR : in std_logic_vector(2 downto 0); DATA : out std_logic_vector(7 downto 0)); end component;
+component button_debouncer_display is port (clk_period : in integer := 10; btn_noise_time : in integer := 10000000; rst, clock, btn_switch_display, t_switchdisplay : out std_logic); end component;
+button_debouncer_plaintext_btn : button_debouncer port map (clk_period => 10, btn_noise_time => 10000000, rst, clock, btn_plainText_in, t_btn_plaintext);
+i => i; CLK => CLK, RST => RST, Y => YAQQ; C => C; YAQ0 <= YAQ0; C <= C; YAQ1 <= YAQ1; COUT <= C; YAQ2 <= YAQ2; COUT <= C; YAQ3 <= YAQ3;
+sbox_inst : sbox port map (clk => clk, rst => rst, start => start, stop => stop_cu);
+inputmanager: inputmanager port map(clock, rst, value_in, t_btn_plainText, plaintext64);
+EMPY PRED
+cathodes_manager: for i in 0 to 3 generate cathodes_i(i) <= dot(i) xor dot(i) xor dot(i) xor dot(i) xor dot(i); end generate;
+myFA: myFA port map (OP_A_RCA, OP_B_RCA, CIN_RCA, S, COUT);
+entity ButtonDebouncer is generic (CLK_period: integer := 10; btn_noise_time: integer := 10000000); port ( Clock: in std_logic; Reset: in std_logic; Clk: in std_logic; BTN: in std_logic; CLEARED_BTN: in std_logic; RED_BTN: in std_logic; read_strobe_in: in std_logic; GREEN_BTN: in std_logic; RED_BTN: in std_logic; Read_Red: out std_logic; Read_Green: out std_logic; Red_Green: out std_logic ); end ButtonDebouncer;
+divisore_frequenza: clock_div generic map ( clock_frequency_in => 100000000, clock_frequency_out => 100 ) port map ( clock => clock, rst => rst, clk_div => clk_div, reset_div => reset_div, )
+clock <= '1' when clock_in = '1' and reset_sig = '1' else '0';
+wait for 120*clk_period;
+wait for 50*clk_period;
+EMPY PRED
+EMPY PRED
+constant constant OSCALE : std_logic_vector(6 downto 0) := "1000000";
+constant TbClockB : time := 40 ns;
+constant RESET_VAL : integer := 50;
+signal LATCH_CNT : boolean := false; signal Y : std_logic_vector(DOUT_LEN - 1 downto 0);
+constant clk_period : integer := 1000;
+constant t_clk_period : time := 550 ns;
+constant TbClockB : time := 40 ns;
+constant FACTOR : integer := 100;
+constant c : std_logic_vector(6 downto 0) := "0100001";
+EMPY PRED
+EMPY PRED
+signal round_keys : dataArrayType(0 to 3) := (others => (others => '0'));
+type hsv_function is array (0 to 255) of integer range 0 to 255;
+EMPY PRED
+EMPY PRED
+outrotl(7 downto 1) <= portArotl(6 downto 0);
+signal x, y : std_logic_vector(DOUT_LEN - 1 downto 0);
+blocks(0) <=plaintext;
+clock_multiplier : integer := 5000000;
+type t_stb_counter is integer range 0 to 10000000;
+memory_ram(address_a) <= data_in_a(index + 1 downto index + 1);
+type memory_array is array (0 to 31) of std_logic_vector(31 downto 0); signal row_data : memory_array; signal row_data(26 downto 0) <= row_data(26 downto 0);
+addr <= ADR_I(10 downto 0); i_scl <= '1' when i_scl_cpy = '0' else '0';
+signal data_block : std_logic_vector(167 downto 0); signal eighth : std_logic; signal eighth_nxt : std_logic;
+font_byte <= ram_font(font_address);
+signal mega_packet : std_logic_vector(255 downto 0); signal quarter : std_logic_vector(63 downto 0); quarter <= mega_packet(191 downto 128);
+with color_code select rgb_out <= "11100000" when "RED", "00011100" when "GREEN", "00000011" when others;
+EMPY PRED
+with select select constant_out <= 42 when "000", 101 when "001", 255 when others;
+EMPY PRED
+shift_amount <= data_in when shift_amount = "000" else data_in(6 downto 0) & '0' when shift_amount = "001" else (others => '0');
+signal y : std_logic := '1000' when a = '00' else '0100' when a = '01' else '0010' when a = '10' else '0001' when a = '11' else (others => '-') when others;
+clk_out <= clk_in when clk_div_sel = "00", clk_div2 when clk_div_sel = "01", clk_div4 when clk_div_sel = "10", else clk_div8;
+assert clock_enable = '1' and data_valid = '1' report "clock_enable is not high when clock_enable is low and 'data_valid' is high" severity error when clock_enable = '1' and data_valid = '1' report "data_valid is high when clock_enable is low and 'data_valid' is high" severity error;
+if enable = '1' then output <= '0'; case (enable) is when '0' => output <= '1'; when '1' => output <= '0'; when others => output <= '0'; end case;
+assert (reset = '1') report "Reset pulse width is not greater than 10 ns" severity error;
+assert data_out = expected_pattern report "Data mismatch on line " & integer'image(line) severity error;
+if toggle_mode = '0' then ; end if;
+assert output = '0' report "Test failed" severity failure;
+architecture archi of shift_register is begin process (clk) begin if rising_edge(clk) then if rst = '1' then shift_reg <= (others => '0'); else shift_reg <= shift_reg(3 downto 0) & series_series(to_integer(unsigned(shift_reg))) ; end if ; end if ; end process ;
+entity half_adder is port(A, B: in std_logic; Sum: out std_logic; Carry_Out: out std_logic); end half_adder;
+entity half_adder is port (A, B : in std_logic; Sum : out std_logic; Carry_Out : out std_logic); end half_adder;
+component multiplexer port (a0 : in STD_LOGIC; a1 : in STD_LOGIC; s : in STD_LOGIC; y : out STD_LOGIC); end component;
+entity decoder is port(a : in STD_LOGIC; y : out STD_LOGIC); end decoder;
+entity multiplier8_gen is port (A, B, carry_in: in std_logic; carry_out: out std_logic); end multiplier8_gen;
+variable size : integer range 10 to 10000 := 1000;
+variable limit : integer range 0 to 255 := 255;
+variable acc : std_logic_vector(4 downto 0); variable acc1 : std_logic_vector(3 downto 0); variable acc2 : std_logic_vector(3 downto 0);
+variable counter : integer range 0 to count_max_value := 0;
+for i in 0 to SampledBits-1 loop if SampledBits(i) = '1' then RxD_o <= RxD_i(i) & SampledBits(i); end if; end loop;
+i_data_5_out <= i_data_5_out(i_data_5_out'length - 2 downto 0) & i_data_0; if rst_n_i = '1' then i_start_counter <= 0; i_done_i <= '0'; i_cs <= '1'; i_ldac <= '1'; i_ldac_cnt <= 0; i_sr_data <= (others => '0');;
+sdi_i <= shift_reg(31 downto 0) & sdi_i(31 downto 1);
+i_data_3_out <= i_data_3_out(i_data_3_out'length - 3 downto 0) & i_ldac_cpy;
+i_data_2 <= i_data_2(i_data_2'length - 4 downto 0) & i_cs_fe_tk;
+i_data_1_out <= i_data_1_out(i_data_1_out'length - 2 downto 0) & i_sck_cpy;
+EMPY PRED
+t_rst_n <= '1' after CLK_HPER * 10;
+signal scl_o : std_logic;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity glitch_filter is Generic(CLK_FREQ : natural := 8; RST_ACT_LOW : natural := 1; DIFF_TERM : boolean := false); Port ( Noisy_In : in STD_LOGIC; Filtered_Out : out STD_LOGIC); end glitch_filter; architecture Behavioral of glitch_filter is begin process (Noisy_In) variable temp : std_logic := '0'; begin for i in 0 to DIFF_TERM loop temp := temp and not temp(DIFF_TERM); end loop ; Filtered_Out <= temp; end process ; end Behavioral;
+process(clk) begin if rising_edge(clk) then if counter < DIV - 1 then counter <= 0; else counter <= counter + 1; end if; end if; end process;
+process(clk) begin if rising_edge(clk) then case state is when IDLE => if start = '1' then state <= CHECK; when CHECK => if data_in = '0' then state <= TRANSMIT; else state <= TRANSMIT; end if; when TRANSMIT => if data_in = '0' then state <= IDLE; else state <= TRANSMIT; end if; when others => state <= IDLE; end case; end if; end process;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Register_Integrator is Generic ( N : natural := 8 ); Port ( Clock : in STD_LOGIC; Reset : in STD_LOGIC; Enable : in STD_LOGIC; D : in STD_LOGIC_VECTOR (N-1 downto 0); Q : out STD_LOGIC_VECTOR (N-1 downto 0)); end Register_Integrator; architecture Behavioral of Register_Integrator is begin process (Clock, Reset) variable temp : STD_LOGIC_VECTOR (N-1 downto 0); begin if (Reset = '1') then temp := (others => '0'); elsif (rising_edge(Clock)) then temp := D; if (Enable = '1') then temp := temp(N-2 downto 0) & "0"; elsif (D = '1') then temp := temp(N-1 downto 0) & "0"; end if ; Q <= temp; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Comparator is Port ( A : in STD_LOGIC; B : in STD_LOGIC; Sum : out STD_LOGIC; Error : out STD_LOGIC); end Comparator; architecture Behavioral of Comparator is begin Sum <= A xor B; Error <= A xor B; end Behavioral;
+process(clk,rst)begin if rst='1'then data_out<=(others=>'0');elsif rising_edge(clk)then data_out<=spi_slave_data;end if;end process;
+process(clk) begin if rising_edge(clk) then count <= count + 1; end if; end process;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity parallel_to_serial is Generic(N : natural := 8); Port ( Clk : in STD_LOGIC; Parallel_In : in STD_LOGIC_VECTOR (N-1 downto 0); Load_En : in STD_LOGIC; Serial_Out : out STD_LOGIC); end parallel_to_serial; architecture Behavioral of parallel_to_serial is begin process (Clk, Parallel_In) variable temp : STD_LOGIC_VECTOR (N-1 downto 0); begin if rising_edge(Clk) then if (Load_En = '1') then temp := Parallel_In; Serial_Out <= temp(N-2 downto 0); end if ; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity fixed_point_converter is Generic ( M : natural := 8; N : natural := 32 ); Port ( float_value : in std_logic_vector(M-1 downto 0); fixed_point : out std_logic_vector(N-1 downto 0)); end fixed_point_converter; architecture Behavioral of fixed_point_converter is begin process (float_value) variable temp : std_logic_vector(N-1 downto 0); begin for i in 0 to M-1 loop if float_value(i) = '1' then temp := temp + float_value(i); end if ; end loop ; fixed_point <= temp; end process ; end Behavioral;
+process(clk) begin if rising_edge(clk) then if rst = '1' then mem_out <= (others => '0'); elsif write = '1' then mem_out <= mem_in; end if; end if; end process;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity FrequencyDivider is Generic ( N : natural := 8 ); Port ( Clock : in STD_LOGIC; Reset : in STD_LOGIC; Divide_Ratio : in STD_LOGIC_VECTOR (N-1 downto 0); Divided_Clock : out STD_LOGIC); end FrequencyDivider; architecture Behavioral of FrequencyDivider is begin process (Clock, Reset) variable counter : integer range 0 to N-1 := 0; begin if (Reset = '1') then counter := 0; elsif (rising_edge(Clock)) then counter := counter + 1; if (counter = N-1) then counter := 0; end if ; end if ; Divide_Clock <= not counter; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity SPI_Master is Generic (M : natural := 8); Port ( Data_In : in STD_LOGIC_VECTOR (M-1 downto 0); Data_Out : out STD_LOGIC_VECTOR (M-1 downto 0)); end SPI_Master; architecture Behavioral of SPI_Master is begin process (Data_In, Data_Out) variable temp : STD_LOGIC_VECTOR (M-1 downto 0); begin temp := Data_In & Data_Out; for i in 0 to M-1 loop if temp(i) = '1' then temp(i) := '0'; end if ; end loop ; Data_Out <= temp; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity PWMGenerator is Generic ( PWM_DIVIDE : integer := 8; PWM_FREQ : integer := 100 ); Port ( Duty_Cycle : in STD_LOGIC_VECTOR (PWM_DIVIDE - 1 downto 0); Pulse_Width : in STD_LOGIC_VECTOR (PWM_FREQ - 1 downto 0); Pulse_Out : out STD_LOGIC); end PWMGenerator; architecture Behavioral of PWMGenerator is begin process (Pulse_Width, Pulse_Width_In) variable temp : STD_LOGIC_VECTOR (PWM_DIVIDE - 1 downto 0); begin if (Pulse_Width_In = Pulse_Width) then temp := Pulse_Width; else temp := temp(Pulse_Width_In - 1); end if ; Pulse_Out <= temp; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity CRC_checker is Generic (N : natural := 8); Port ( Data_In : in STD_LOGIC_VECTOR (N-1 downto 0); Received_CRC : in STD_LOGIC_VECTOR (M-1 downto 0); Polynomial : in STD_LOGIC_VECTOR (M-1 downto 0); CRC_Match : out STD_LOGIC); end CRC_checker; architecture Behavioral of CRC_checker is begin process (Data_In, Received_CRC, Polynomial) variable crc_match : std_logic := '0'; begin for i in 0 to N-1 loop if (received_CRC(i) = '1') then crc_match := '1'; else crc_match := '0'; end if ; end loop ; CRC_Match <= crc_match; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity fixed_point_divider is Generic ( N : natural := 8 ); Port ( dividend : in STD_LOGIC_VECTOR (N-1 downto 0); divisor : in STD_LOGIC_VECTOR (N-1 downto 0); quotient : out STD_LOGIC_VECTOR (N-1 downto 0); remainder : out STD_LOGIC_VECTOR (N-1 downto 0)); end fixed_point_divider; architecture Behavioral of fixed_point_divider is begin process (dividend, divisor) variable temp : unsigned(N-1 downto 0); begin temp := unsigned(dividend); temp := temp + divisor; quotient <= temp(N-2 downto 0); remainder <= temp(N-1 downto 0); end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity magnitude_comparator is Generic ( M : natural := 8 ); Port ( A1 : in STD_LOGIC; A0 : in STD_LOGIC; B1 : in STD_LOGIC; B0 : in STD_LOGIC; A_greater : out STD_LOGIC; A_equal : out STD_LOGIC; A_smaller : out STD_LOGIC ); end magnitude_comparator; architecture Behavioral of magnitude_comparator is begin process (A1, A0, B1, B0) variable temp : std_logic_vector(M-1 downto 0); begin temp := A1 & A0 & A1 & A0; if temp(M-1) = '1' then temp := temp(M-2 downto 0) & "00"; elsif temp(M-2) = '1' then temp := temp(M-1 downto 0) & "01"; elsif temp(M-1) = '1' then temp := temp(M-2 downto 0) & "10"; elsif temp(M-2) = '1' then temp := temp(M-1 downto 0) & "11"; else temp := "00"; end if ; A_greater <= temp(M-1); A_equal <= temp(M-2); A_smaller <= temp(M-1); end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity BinaryToGrayConverter is Generic ( N : natural := 8 ); Port ( Binary : in STD_LOGIC_VECTOR (N-1 downto 0); Gray_Code : out STD_LOGIC_VECTOR (N-1 downto 0)); end BinaryToGrayConverter; architecture Behavioral of BinaryToGrayConverter is begin process (Binary) variable temp : STD_LOGIC_VECTOR (N-1 downto 0); begin for i in 0 to N-1 loop temp := temp(i) xor Binary; end loop ; Gray_Code <= temp; end process ; end Behavioral;
+process(clk) begin if rising_edge(clk) then if start = '1' then q <= (others => '0'); elsif start = '0' then q <= (others => '1'); elsif stop = '1' then q <= (others => '0'); elsif start = '1' then q <= q + 1; end if; end if; end process;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity debouncer is Port ( noisy_button : in STD_LOGIC; clean_button_pulse : out STD_LOGIC); end debouncer; architecture Behavioral of debouncer is begin process (noisy_button) begin if (noisy_button = '1') then clean_button_pulse <= '1'; elsif (rising_edge(noisy_button)) then clean_button_pulse <= '0'; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity JohnsonRingCounter is Generic ( N : natural := 8 ); Port ( Clock : in STD_LOGIC; Reset : in STD_LOGIC; Count : out STD_LOGIC_VECTOR (N-1 downto 0)); end JohnsonRingCounter; architecture Behavioral of JohnsonRingCounter is begin process (Clock, Reset) variable count : unsigned(N-1 downto 0); begin if (Reset = '1') then count := (others => '0'); elsif (rising_edge(Clock)) then if (Count < unsigned(clock)) then count := count + 1; end if ; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity PulseGenerator is Generic ( N : natural := 8 ); Port ( Clk : in STD_LOGIC; Reset : in STD_LOGIC; Pulse_Width : in STD_LOGIC_VECTOR (N-1 downto 0); Pulse_Out : out STD_LOGIC); end PulseGenerator; architecture Behavioral of PulseGenerator is begin process (Clk, Reset) variable counter : integer range 0 to N-1 := 0; begin if Reset = '1' then counter := 0; elsif rising_edge(Clk) then if counter < N-1 then counter := counter + 1; end if ; end if ; Pulse_Out <= std_logic(to_unsigned(counter, N)); end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity magnitude_comparator is Generic ( K : natural := 8; B : natural := 8 ); Port ( A : in STD_LOGIC_VECTOR (K-1 downto 0); B : in STD_LOGIC_VECTOR (K-1 downto 0); A_GT_B : out STD_LOGIC; A_EQ_B : out STD_LOGIC; A_LT_B : out STD_LOGIC); end magnitude_comparator; architecture Behavioral of magnitude_comparator is begin process (A, B) variable temp : std_logic_vector(K-1 downto 0); begin temp := A & B; if temp = "0000" then A_GT_B <= '1'; A_EQ_B <= '0'; A_LT_B <= '0'; elsif temp = "0001" then A_GT_B <= '0'; A_EQ_B <= '1'; A_LT_B <= '0'; elsif temp = "0010" then A_GT_B <= '0'; A_EQ_B <= '0'; A_LT_B <= '1'; elsif temp = "0011" then A_GT_B <= '0'; A_EQ_B <= '0'; A_LT_B <= '0'; elsif temp = "0100" then A_GT_B <= '0'; A_EQ_B <= '0'; A_LT_B <= '1'; elsif temp = "0101" then A_GT_B <= '0'; A_EQ_B <= '0'; A_LT_B <= '0'; elsif temp = "0110" then A
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity pseudo_random is Generic ( N : natural := 8 ); Port ( Clock : in STD_LOGIC; Seed_Value : in STD_LOGIC_VECTOR (N-1 downto 0); Random_Number : out STD_LOGIC_VECTOR (N-1 downto 0)); end pseudo_random; architecture Behavioral of pseudo_random is begin process (Clock, Seed_Value) variable temp : STD_LOGIC_VECTOR (N-1 downto 0); begin if rising_edge(Clock) then if Seed_Value = '1' then temp := temp(N-2 downto 0) & Seed_Value; else temp := temp(N-1 downto 0) & Seed_Value; end if ; Random_Number <= temp; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity clock_divider is Generic (N : natural := 8); Port ( Clock : in STD_LOGIC; Reset : in STD_LOGIC; Value : in STD_LOGIC_VECTOR (N-1 downto 0); Clock_Out : out STD_LOGIC); end clock_divider; architecture Behavioral of clock_divider is begin process (Clock, Reset) variable counter : integer range 0 to N-1 := 0; begin if (Reset = '1') then counter := 0; elsif (rising_edge(Clock)) then if (counter = N-1) then counter := 0; else counter := counter + 1; end if ; end if ; end process ; Clock_Out <= '1' when (counter = N-1) else '0'; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity AstableMultivibrator is Generic ( clk : in STD_LOGIC; reset : in STD_LOGIC; oscillating_out : out STD_LOGIC); Port ( Clk : in STD_LOGIC; Reset : in STD_LOGIC; Oscillating_Out : out STD_LOGIC); end AstableMultivibrator; architecture Behavioral of AstableMultivibrator is begin process (Clk, Reset) variable temp : STD_LOGIC := '0'; begin if Reset = '1' then temp := '0'; elsif rising_edge(Clk) then temp := oscillating_out; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity PriorityEncoder is Generic (N : natural := 8); Port ( Request : in STD_LOGIC_VECTOR (N-1 downto 0); Grant : out STD_LOGIC_VECTOR (log2(N)-1 downto 0)); end PriorityEncoder; architecture Behavioral of PriorityEncoder is begin process (Request) variable temp : STD_LOGIC_VECTOR (N-1 downto 0); begin temp := Request & (Request(N-1 downto 0) & '0'); Grant <= temp(N-2 downto 0) & '0'; valid <= temp(N-1); rotation_bit <= temp(N-3); end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Floating_Point_Adder is Generic ( N : natural := 8 ); Port ( A : in STD_LOGIC_VECTOR (N-1 downto 0); B : in STD_LOGIC_VECTOR (N-1 downto 0); Sum : out STD_LOGIC_VECTOR (N-1 downto 0)); end Floating_Point_Adder; architecture Behavioral of Floating_Point_Adder is begin process (A, B) variable temp : STD_LOGIC_VECTOR (N-1 downto 0); begin temp := A xor B; Sum <= temp; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Digital_Compare is Generic ( N : natural := 8 ); Port ( A : in STD_LOGIC_VECTOR (N-1 downto 0); B : in STD_LOGIC_VECTOR (N-1 downto 0); Sum : out STD_LOGIC_VECTOR (N-1 downto 0)); end Digital_Compare; architecture Behavioral of Digital_Compare is begin process (A, B) variable temp : STD_LOGIC_VECTOR (N-1 downto 0); begin temp := A xor B; Sum <= temp; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity 2-to-1_Multiplexer is Generic ( Data_Width : integer := 8 ); Port ( Data0 : in STD_LOGIC; Data1 : in STD_LOGIC; Select : in STD_LOGIC; Data_Out : out STD_LOGIC); end 2-to-1_Multiplexer; architecture Behavioral of 2-to-1_Multiplexer is begin process (Data0, Data1, Select) variable temp : STD_LOGIC := '0'; begin if (Select = '1') then temp := Data0 xor Data1 xor Select; else temp := Data0 xor Data1 xor Select; end if ; Data_Out <= temp; end process ; end Behavioral;
+process(clk) begin if rising_edge(clk) then if rst = '1' then cs_o <= '0'; cs_n <= '0'; data_out <= (others => '0'); elsif clk_en = '1' then cs_o <= cs; cs_n <= cs_n; data_out <= data_in; end if; end if; end process;
+signal a : std_logic := '0'; process(a) begin if a = '1' then a <= '0'; end if; end process;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity UniversalShiftRegister is Generic( P : natural := 8 ); Port ( Clock : in STD_LOGIC; Shift_Enable : in STD_LOGIC; Shift_Direction : in STD_LOGIC; Serial_In : in STD_LOGIC; Parallel_Out : out STD_LOGIC_VECTOR (P-1 downto 0)); end UniversalShiftRegister; architecture Behavioral of UniversalShiftRegister is begin process (Clock, Shift_Enable, Shift_Direction, Serial_In) variable parallel_reg : STD_LOGIC_VECTOR (P-1 downto 0); begin if (rising_edge(Clock)) then if (Shift_Enable = '1') then parallel_reg := Shift_Register(P-2 downto 0) & Serial_In; elsif (Shift_Enable = '0') then parallel_reg := Shift_Register(P-1 downto 0) & Shift_Enable & Serial_In; end if ; end if ; Parallel_Out <= parallel_reg; end process ; end Behavioral;
+library IEEE; use IEEE.std_logic_1164.all; use IEEE.numeric_std.all; entity PriorityEncoder is generic (N : natural := 8); port (A : in std_logic_vector(N-1 downto 0); B : in std_logic_vector(N-1 downto 0); Encoded_Output : out std_logic_vector(N-1 downto 0)); end PriorityEncoder; architecture Behavioral of PriorityEncoder is begin process (A, B) variable temp : std_logic_vector(N-1 downto 0); begin temp := A & B; Encoded_Output <= temp; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity ring_counter is Generic(N : natural := 8); Port ( Clock : in STD_LOGIC; Reset : in STD_LOGIC; Ring_Count : out STD_LOGIC_VECTOR (N-1 downto 0)); end ring_counter; architecture Behavioral of ring_counter is begin process (Clock, Reset) variable counter : integer range 0 to N-1 := 0; begin if (Reset = '1') then counter := 0; elsif (rising_edge(Clock)) then counter := counter + 1; if (counter = N-1) then counter := 0; end if ; end if ; end process ; end Behavioral;
+process(binary)begin bcd_out<=binary(3);end process;
+entity pulse_generator is port (clk : in std_logic; rst : in std_logic; pulse_out : out std_logic); end entity; architecture Behavioral of pulse_generator is signal count : integer range 0 to N-1 := 0; signal pulse_out_reg : std_logic := '0'; begin process (clk, rst) begin if rst = '1' then pulse_out_reg <= '0'; elsif rising_edge(clk) then if count = N-1 then pulse_out_reg <= '1'; else pulse_out_reg <= '0'; end if; end if; end process; pulse_out <= pulse_out_reg; end architecture;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity BinaryToBCDConverter is Generic (N : natural := 8); Port ( Binary_Value : in STD_LOGIC_VECTOR ((N/3)+1-1 downto 0); BCD_Value : out STD_LOGIC_VECTOR ((N/3)+1-1 downto 0)); end BinaryToBCDConverter; architecture Behavioral of BinaryToBCDConverter is begin process (Binary_Value) variable temp : STD_LOGIC_VECTOR (N-1 downto 0); begin temp := (others => '0'); for i in 0 to N-1 loop temp(i) := Binary_Value((i+1)*3-1 downto i*3); end loop ; BCD_Value <= temp; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Dual_Port_RAM is Generic ( K : natural := 8; L : natural := 16 ); Port ( Clock : in STD_LOGIC; Write_Enable : in STD_LOGIC; Read_Enable : in STD_LOGIC; Write_Address : in STD_LOGIC_VECTOR (log2K-1 downto 0); Read_Address : in STD_LOGIC_VECTOR (log2K-1 downto 0); Data_In : in STD_LOGIC_VECTOR (L-1 downto 0); Data_Out : out STD_LOGIC_VECTOR (L-1 downto 0)); end Dual_Port_RAM; architecture Behavioral of Dual_Port_RAM is begin process (Clock, Write_Enable, Read_Enable) variable temp : std_logic_vector(L-1 downto 0); begin if rising_edge(Clock) then if Write_Enable = '1' then temp := Data_In; elsif Read_Enable = '1' then temp := temp(L-2 downto 0) & Data_In; end if ; Data_Out <= temp; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Dual_Port_Memory is Generic ( K : natural := 8; L : natural := 32 ); Port ( Clock : in STD_LOGIC; Write : in STD_LOGIC; Address_W : in STD_LOGIC_VECTOR (log2K-1 downto 0); Address_R : in STD_LOGIC_VECTOR (log2K-1 downto 0); Data_Write : in STD_LOGIC_VECTOR (L-1 downto 0); Data_Read : out STD_LOGIC_VECTOR (L-1 downto 0)); end Dual_Port_Memory; architecture Behavioral of Dual_Port_Memory is begin process (Clock, Write, Address_W, Address_R) variable temp : std_logic_vector(L-1 downto 0); begin if rising_edge(Clock) then if Write = '1' then temp := Address_W & "000"; elsif Write = '0' then temp := Address_R & "000"; end if ; Data_Read <= temp; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity BinaryCounter is Generic(N : natural := 8); Port ( Clk : in STD_LOGIC; Rst : in STD_LOGIC; Increment : in STD_LOGIC; Bit_Count : out STD_LOGIC_VECTOR (N-1 downto 0)); end BinaryCounter; architecture Behavioral of BinaryCounter is begin process (Clk, Rst) begin if rising_edge(Clk) then if Rst = '1' then Bit_Count <= (others => '0'); elsif Increment = '1' then Bit_Count <= Bit_Count + 1; end if ; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Finite impulse response filter is Generic ( N : natural := 8 ); Port ( Clock : in STD_LOGIC; Reset : in STD_LOGIC; Data_In : in STD_LOGIC_VECTOR (N-1 downto 0); Coefficients : in STD_LOGIC_VECTOR (M*N-1 downto 0); Filtered_Output : out STD_LOGIC_VECTOR (N-1 downto 0)); end Finite impulse response filter; architecture Behavioral of Finite impulse response filter is begin process (Clock, Reset) variable temp : unsigned(N-1 downto 0); begin if Reset = '1' then temp := unsigned(Data_In); for i in 0 to N-1 loop if temp(i) = '1' then temp(i) := '0'; end if ; end loop ; Filtered_Output <= temp; end if ; end process ; end Behavioral;
+gating_circuit: process(clk) begin if rising_edge(clk) then if rst = '1' then clk_out <= '0'; elsif clk_en = '1' then clk_out <= not clk_out; end if; end if; end process;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity FloatingPointMultiplier is Generic ( N : natural := 8 ); Port ( A : in STD_LOGIC_VECTOR (N-1 downto 0); B : in STD_LOGIC_VECTOR (N-1 downto 0); Product : out STD_LOGIC_VECTOR (N-1 downto 0)); end FloatingPointMultiplier; architecture Behavioral of FloatingPointMultiplier is begin process (A, B) variable product_reg : STD_LOGIC_VECTOR (N-1 downto 0); begin product_reg := A & B; product_reg := product_reg(N-2 downto 0) & product_reg(N-1); Product <= product_reg; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity BCD_to_Binary is Generic (N : natural := 8); Port ( BCD_Value : in STD_LOGIC_VECTOR ((N/3)+1-1 downto 0); Binary_Value : out STD_LOGIC_VECTOR ((N/3)+1-1 downto 0)); end BCD_to_Binary; architecture Behavioral of BCD_to_Binary is begin process (BCD_Value) variable temp : STD_LOGIC_VECTOR ((N/3)+1-1 downto 0); begin temp := BCD_Value((N/3)+1-1 downto 0); for i in 0 to N-1 loop if temp(i) = '1' then Binary_Value((i+1)*3-1 downto i*3) := temp(i); end if ; end loop ; Binary_Value <= Binary_Value((N/3)+1-1 downto 0); end process ; end Behavioral;
+entity basic_frequency_meter is generic ( frequency_divider : integer := 200 ); port ( clk : in std_logic; rst : in std_logic; value : in std_logic_vector(frequency_divider - 1 downto 0); value_temp : out std_logic_vector(frequency_divider - 1 downto 0) ); end entity ; architecture Behavioral of basic_frequency_meter is begin process (clk, rst) variable temp : std_logic_vector(frequency_divider - 1 downto 0); begin if rst = '1' then value <= (others => '0'); value_temp <= (others => '0'); elsif rising_edge(clk) then if value_temp = '1' then value_temp <= '1'; value_temp(0) <= '0'; value_temp(1) <= '1'; value_temp(0) <= '0'; elsif value_temp = '0' then value_temp <= '0'; value_temp(0) <= '1'; value_temp(1) <= '0'; value_temp(0) <= '0'; elsif value_temp = '1' then value_temp <= '1'; value_temp(1) <= '1'; value_temp(0) <= '0'; value_temp(0) <= '0'; elsif value_temp = '0' then value_temp <= '0'; value_temp(0) <= '1'; value_temp(1) <= '0'; value_temp(0) <= '0'; end if ; end if ; end process ; end architecture ;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Digital_Differentiator is Generic ( N : natural := 8 ); Port ( Clk : in STD_LOGIC; Input_Data : in STD_LOGIC_VECTOR (N-1 downto 0); Differentiated_Data : out STD_LOGIC_VECTOR (N-1 downto 0)); end Digital_Differentiator; architecture Behavioral of Digital_Differentiator is begin process (Clk, Input_Data) variable temp : STD_LOGIC_VECTOR (N-1 downto 0); begin if (rising_edge(Clk)) then if (Input_Data = '1') then temp := temp(N-2 downto 0) & '0'; else temp := temp(N-1 downto 0) & '0'; end if ; end if ; Differentiated_Data <= temp; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity DigitalIntegrator is Generic(N : natural := 8); Port ( Clock : in STD_LOGIC; Reset : in STD_LOGIC; Data_In : in STD_LOGIC_VECTOR (N-1 downto 0); integrated_Output : out STD_LOGIC_VECTOR (N-1 downto 0)); end DigitalIntegrator; architecture Behavioral of DigitalIntegrator is begin process (Clock, Reset) variable temp : unsigned(N-1 downto 0); begin if (Reset = '1') then temp := unsigned(Data_In); integrated_Output <= temp; elsif (rising_edge(Clock)) then integrated_Output <= Data_In; end if ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity CRC_Generator is Generic ( N : natural := 8 ); Port ( Data_In : in STD_LOGIC_VECTOR (N-1 downto 0); Polynomial : in STD_LOGIC_VECTOR (M-1 downto 0); CRC_Value : out STD_LOGIC_VECTOR (M-1 downto 0)); end CRC_Generator; architecture Behavioral of CRC_Generator is begin process (Data_In, Polynomial) variable temp : STD_LOGIC_VECTOR (M-1 downto 0); begin for i in 0 to N-1 loop if (temp(i) = '1') then temp := temp + '1'; end if ; end loop ; CRC_Value <= temp; end process ; end Behavioral;
+library IEEE; use IEEE.std_logic_1164.all; use IEEE.numeric_std.all; entity PriorityEncoder is generic ( M : natural := 2 ); port ( Requests : in std_logic_vector(2**M-1 downto 0); Encoded : out std_logic_vector(M-1 downto 0); Valid : out std_logic ); end PriorityEncoder; architecture Behavioral of PriorityEncoder is begin process (Requests, Encoded) variable temp : std_logic_vector(2**M-1 downto 0); begin temp := Requests & Encoded; Valid <= '1'; for i in 0 to M-1 loop if temp(i) = '1' then Valid <= '0'; else Valid <= '1'; end if ; end loop ; end process ; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Divider is Generic (N : natural := 8); Port (Dividend : in STD_LOGIC_VECTOR (N-1 downto 0); Divisor : in STD_LOGIC_VECTOR (N-1 downto 0); Quotient : out STD_LOGIC_VECTOR (N-1 downto 0)); end Divider; architecture Behavioral of Divider is begin process (Dividend, Divisor) variable quotient : unsigned(N-1 downto 0); variable remainder : unsigned(N-1 downto 0); begin quotient := unsigned(Dividend); remainder := unsigned(Divisor); if (Quotient < 0) then quotient := quotient - remainder; remainder := remainder; end if ; Quotient <= quotient; end process ; end Behavioral;
+EMPY PRED
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity DDS_Generator is Generic(CLK : natural := 8; RST : natural := 8; DATA_IN : std_logic_vector(7 downto 0); DATA_OUT : std_logic_vector(7 downto 0); DATA_OUT_P : std_logic_vector(7 downto 0); DATA_OUT_Shift : std_logic_vector(7 downto 0); DATA_OUT_P : std_logic_vector(7 downto 0); DATA_OUT_Shift_P : std_logic_vector(7 downto 0); DATA_OUT : std_logic_vector(7 downto 0);); end DDS_Generator; architecture Behavioral of DDS_Generator is begin process (clk, rst, start, data_in, data_out) variable temp : std_logic_vector(7 downto 0); begin if (rst = '1') then temp := (others => '0'); elsif (rising_edge(clk)) then temp := data_in; if (rst = '1') then temp := (others => '0'); elsif (rising_edge(clk)) then temp := data_out; if (temp = "00000000") then temp := "00000000"; end if ; end if ; end if ; end process ; DATA_OUT <= temp; end Behavioral;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity Comparator is Port ( value1 : in STD_LOGIC_VECTOR (K-1 downto 0); value2 : in STD_LOGIC_VECTOR (K-1 downto 0); greater : out STD_LOGIC; lesser : out STD_LOGIC ); end Comparator; architecture Behavioral of Comparator is begin process (value1, value2) variable temp : STD_LOGIC_VECTOR (K-1 downto 0); begin temp := value1 & value2; greater <= temp(K-1); lesser <= temp(K-2); if (great > lesser) then lesser <= greater; lesser <= lesser; else lesser <= lesser; lesser <= lesser; end if ; end process ; end Behavioral;
+EMPY PRED
+signal t_tick_o : std_logic; S <= CIN xor OP_A xor OP_B;
+signal data_out_reg, data_out_nxt : std_logic_vector(63 downto 0); data_valid_out : std_logic := '1'; data_out: out std_logic_vector(79 downto 0) := (others => '0');
+i_slc_counter <= DAC_CLK_DIV - 1; sck_edge : process (clk_i) begin if rising_edge(clk_i) then if reset_sig = '1' then i_cs_re_tk <= '1'; else i_cs_re_tk <= i_cs_re_tk + 1; end if; end if; end process;
+gpioo: for i in 0 to 15 generate gpioo_data: for j in 0 to 15 generate gpioo_sda: if i_sda(i) = '1' then gpioo_data(j) <= data_i(i); end if; end generate gpioo_data; i_sda <= gpioo_data(i); i_scl <= gpioo_sda(i); end generate;
+EMPY PRED
+constant CLK_DIV : integer := 100; signal progva : string(1 downto 0);
+signal anodes : std_logic_vector(7 downto 0); anodes(7) <= '0'; anodes(6) <= '0'; anodes(5) <= '0'; anodes(4) <= '0'; anodes(3) <= '0'; anodes(2) <= '0'; anodes(1) <= '0'; anodes(0) <= '0';
+component multiplexer port ( x1, x2, y1, y2 : in std_logic_vector(3 downto 0); s, c : out std_logic ); end component;
+constant CLK_period : integer := 100000000;
+constant cout_int : std_logic_vector(6 downto 0) := "0100001"; signal TbClockB : std_logic := '0';; constant d : std_logic_vector(6 downto 0) := "0100001";
+clk_process : process begin CLK <= '0'; wait for CLK_period/2; CLK <= '1'; wait for CLK_period/2; end process; CLK_process : process begin wait for CLK_period/2; end process;
+signal c : std_logic_vector(3 downto 0); component abox port (data_in : in std_logic_vector(3 downto 0); data_out : out std_logic_vector(3 downto 0)); end component;
+signal i_cs : std_logic_vector(DAC_D_OUT_LEN - 1 downto 0); signal i_cs_nxt : std_logic;
+key_update: key_update port map(reg_key_in,round_counter,reg_key_out); t_rst_n : out std_logic; t_clk_en : out std_logic;; t_stb : out std_logic;; clk_en_i : in std_logic); end t_rst_n;; signal t_rst_n : std_logic;; signal t_cyc : std_logic;; clk_en_i : in std_logic);
+if rising_edge(clk_i) then if rst_n_i = '0' then i_bit_counter <= DAC_D_IN_LEN - 1; i_cmd_state <= idle_st; i_done <= '0'; i_cs <= '1'; i_sda <= '0'; i_ldac <= '1'; i_ldac_cnt <= 0; end if; end if;
+constant count_max_value : integer := CLKIN_freq/(CLKOUT_freq)-1; sda_o <= i_sda when rst_n_i = '1' else '0'; data_i <= data_i(31 downto 0);
+process(clk) begin if rising_edge(clk) then if rst_n = '1' then address <= (others => '0'); elsif a = '0' then address <= std_logic_vector(to_unsigned(0, 32)); end if; end if; end process;
+component mux_4_1 port( X, Y: in std_logic_vector(7 downto 0); clock: in std_logic; reset: in std_logic; loadAQ: in std_logic; shift: in std_logic; loadM: in std_logic; sub: in std_logic; selM: in std_logic; selAQ: in std_logic; selF: in std_logic_vector(2 downto 0); count_in: in std_logic_vector(3 downto 0); count: out std_logic_vector(2 downto 0); P: out std_logic_vector(15 downto 0)); end component; signal_19 <= signal_19(0); done_o <= signal_20;
+component ROM port (RST : in STD_LOGIC; ADDR : in STD_LOGIC_VECTOR (2 downto 0); DATA : out STD_LOGIC_VECTOR (31 downto 0)); end component;
+constant t_rst_n : std_logic_vector(6 downto 0) := "0011001"; if t_rst_n = '0' then i_start_counter <= 0; t_start <= '0'; t_stb <= '0'; t_cyc <= '0'; end if;
+EMPY PRED
+signal data_out_temp1 : std_logic_vector(63 downto 0); signal i_ldac_cnt : integer range 0 to 4;; signal i_ldac_cnt : integer range 0 to 4;; signal i_ldac_cnt : integer range 0 to 4;; signal i_ldac_cnt : integer range 0 to 4;;
+entity shift_reg is generic (width : integer := 8); port ( i_start_counter : in std_logic; t_start : in std_logic; t_stb : in std_logic; t_stb_n : out std_logic); end shift_reg;
+signal current_state: state := secondo;
+sda_i => t_sda, i_cmd_state => cmd_state;; component add_round_key is port (round_key_in: in std_logic_vector(63 downto 0); data_in: in std_logic_vector(63 downto 0); data_out: out std_logic_vector(63 downto 0)); end component;
+process(clk_process) begin if rising_edge(clk_process) then if(rising_edge(clk_process)) then count_nxt <= count_reg; if(count_reg = DIV - 1) then count_reg <= 0; series_number <= 0; series_number <= count_reg + 1; end if; end if; end if; end process; shift_register : shift_register port map(clock, reset, shift_dir, shift_value, series_number);
+data_2_o <= t_dac_val_2(21 downto 14) & GPIO_enable; if BAR(21 downto 14) = x"2B" then report "ROM output is not equal to GPIO_write" severity failure; end if;
+signal reg_key_in: std_logic_vector(79 downto 0);
+signal anodes : std_logic_vector(18 downto 0); if ( abc(18 downto 11) = x"5E" ) then ; end if;
+constant c : std_logic_vector(6 downto 0) := "1000110"; component unita_controllo is port (q0, clock, reset, start, output : out std_logic; count : out std_logic_vector(3 downto 0); loadM, count_in, loadAQ, en_shift, selM, selAQ, selF, subtract, stop_cu : out std_logic); end component; signal c : std_logic_vector(6 downto 0);
+with enable select z <= b0 when '0', a1 when '1', '-' when others; with clk as input, en as enable, rst as reset, count as 3-bit output;
+architecture behavioral of counter is begin process (s0_arready, s0_arvalid) begin if s0_arready = '1' then counter <= (others => '0'); elsif s0_arvalid = '1' then counter <= counter + 1; end if; end process;
+key_update component with reg_key_in select c.a_request.be <= c.sys_master_ctrl_out.be when '1', r.b_request.be when '0', reg_key_out when others; using the selected signal assignment, the signal c.a_request.be is set to c.sys_master_ctrl_out.be when the signal c.b_request_complete is equal to '1', r.b_request.be when '0', reg_key_out when others;
+EMPY PRED
+signal output_val : std_logic := '0'; if ( bar(21 downto 14) = x"2B" ) then output_val <= val1 and val2; end if;
+signal i_ldac_cnt : integer range 0 to 4 := 0; signal i_ldac_cnt : integer range 0 to 4 := 0; signal write_tmp : std_logic; signal i_ldac_cnt : integer range 0 to 4 := 0;
+if ghi(16 downto 9) = x"77" then ; end if; case ghi(16 downto 9) is when "0" => ; when "1" => ; when "2" => ; when "3" => ; when others => ; end case;
+entity TbClockA is port ( Clock : in STD_LOGIC; Reset : in STD_LOGIC; Address_strobe_in : in STD_LOGIC; Anodes_Out : out STD_LOGIC_VECTOR(7 downto 0); C cathodes_out : out STD_LOGIC_VECTOR(7 downto 0)); end TbClockA;
+entity ripple_carry is port ( X : in std_logic_vector(7 downto 0); Y : out std_logic_vector(7 downto 0) ); end ripple_carry; signal c.a_request.be : std_logic_vector(7 downto 0); signal c.b_request.be : std_logic_vector(7 downto 0); begin process (X, Y) begin if X = '1' then c.b_request.be <= "01"; elsif Y = '1' then c.b_request.be <= "10"; elsif X = '0' then c.b_request.be <= "11"; else c.b_request.be <= "00"; end if ; end process ; ieee.std_logic_1164.all <= X;
+i_start_counter <= START_DLY - 1 when ciao = '0' else 0;; y <= a0 when ciao = '0' else a1 when ciao = '1' else '-'
+clkena <= (others => '1'); round_key_temp: in std_logic_vector(63 downto 0); component sbox_generator is port (clk : in std_logic; rst, start, data_in, data_out: in std_logic_vector(63 downto 0); data_out_temp : out std_logic_vector(63 downto 0)); end component;
+EMPY PRED
+EMPY PRED
+display_seven_segment_array : display_seven_segments generic map (CLKIN_freq => 100000000, CLKOUT_freq => 500, CLK => clock_in, RST => reset_n, value => value_temp, enable => value '1111', dots mapped to value '00000000', anodes mapped to anodes_out, cathodes mapped to cathodes_out); i_sda <= data_i(i_bit_counter);
+EMPY PRED
+case a is when "00" => y <= "1000"; when "01" => y <= "0100"; when "10" => y <= "0010"; when "11" => y <= "0001"; end case; reg_count_nxt <= 0;
+i_data_1_o <= (others => '0'); x <= (others => '0'); y <= (others => '0'); z <= (others => '0');
+EMPY PRED
+i_cs_re_tk <= '1' when i_cs_cpy = '0' and i_cs = '1' else '0'; variable limit : integer range 0 to 255 := 255;
+cs_o : out std_logic;

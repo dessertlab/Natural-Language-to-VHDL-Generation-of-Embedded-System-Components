@@ -1,0 +1,1 @@
+TopModule is a VHDL entity with clk as input std_logic signal, x as input std_logic signal, y as input std_logic_vector of 3 bit signal, Y0 as output std_logic signal, z as output std_logic signal. The entity and its ports should be defined within a VHDL code snippet.

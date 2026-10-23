@@ -1,0 +1,1 @@
+module TopModule is port ( clk: in STD_LOGIC; load: in STD_LOGIC; ena: in STD_LOGIC; amount: in STD_LOGIC_VECTOR(1 downto 0); data: in STD_LOGIC_VECTOR (63 downto 0); q: out STD_LOGIC_VECTOR (63 downto 0)); end TopModule;

@@ -1,0 +1,1 @@
+TopModule is a component with input signals in_p, state: std_logic_vector(9 downto 0), next_state: std_logic_vector(9 downto 0), out1, out2: std_logic; define a case statement of state_code signal with cases S0, S1, S2, S3, S4, S5, S6, S7, S8, S9; set i_sda signal to the element of array mem at position given by the value of addr signal

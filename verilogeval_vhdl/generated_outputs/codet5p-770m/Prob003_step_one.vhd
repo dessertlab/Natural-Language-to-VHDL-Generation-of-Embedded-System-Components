@@ -1,0 +1,1 @@
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( One : in STD_LOGIC; TopModule : out STD_LOGIC); end TopModule; architecture Behavioral of TopModule is signal count: unsigned(1 downto 0) := (others => '0'); begin process (One) begin if rising_edge(One) then count <= count + 1; end if; end process; TopModule <= count(1); end Behavioral;

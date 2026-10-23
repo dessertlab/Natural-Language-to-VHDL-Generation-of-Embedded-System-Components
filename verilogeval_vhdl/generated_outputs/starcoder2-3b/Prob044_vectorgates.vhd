@@ -1,0 +1,1 @@
+TopModule: Module Port (a: in std_logic_vector(2 downto 0); b: in std_logic_vector(2 downto 0); out_or_bitwise: out std_logic_vector(2 downto 0); out_or_logical: out std_logic_vector(2 downto 0); out_not: out std_logic_vector(5 downto 0)); end Module;

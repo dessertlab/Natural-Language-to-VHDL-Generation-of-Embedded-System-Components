@@ -1,0 +1,1 @@
+TopModule is a component with input std_logic_vector in_p (255 downto 0) and output std_logic_vector out_p (8 downto 0); entity population_count is port (in_p : in std_logic_vector(255 downto 0); out_p : out std_logic_vector(7 downto 0)); end entity;

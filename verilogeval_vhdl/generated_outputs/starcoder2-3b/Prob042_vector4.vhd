@@ -1,0 +1,1 @@
+top: module TopModule(in_p : std_logic_vector(7 downto 0); out_p : std_logic_vector(31 downto 0)); begin process (in_p) begin out_p <= (others => '0'); for i in 0 to 23 loop out_p(i) <= in_p(7); end loop; end process; end module;

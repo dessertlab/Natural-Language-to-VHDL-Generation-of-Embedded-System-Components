@@ -1,0 +1,1 @@
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity TopModule is Port ( A : in STD_LOGIC; B : in STD_LOGIC; Cin : in STD_LOGIC; cout : out STD_LOGIC; Sum : out STD_LOGIC); end TopModule; architecture Behavioral of TopModule is begin process (A, B, Cin) variable temp: std_logic; begin temp := A xor B; Sum <= temp; cout <= temp and Cin; end process; end Behavioral;

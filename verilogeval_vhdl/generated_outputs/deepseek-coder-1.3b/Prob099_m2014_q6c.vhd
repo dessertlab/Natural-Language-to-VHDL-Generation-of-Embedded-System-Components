@@ -1,0 +1,1 @@
+library IEEE; use IEEE.STD_LOGIC_1164.ALL; entity NextStateMachine is Port ( Y : in STD_LOGIC; Y2 : out STD_LOGIC; Y4 : out STD_LOGIC); end NextStateMachine; architecture Behavioral of NextStateMachine is begin process (Y) begin if Y = '0' then Y2 <= '0'; Y4 <= '0'; elsif Y = '1' then Y2 <= '1'; Y4 <= '0'; end if ; end process ; end Behavioral;

@@ -1,0 +1,1 @@
+TopModule: in_p : in std_logic_vector(7 downto 0); parity : out std_logic; begin process (in_p) begin parity <= in_p(0) xor in_p(1) xor in_p(2) xor in_p(3) xor in_p(4) xor in_p(5) xor in_p(6) xor in_p(7); end process; end TopModule;

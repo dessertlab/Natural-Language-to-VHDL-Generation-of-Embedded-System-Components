@@ -1,0 +1,1 @@
+module TopModule is port( in_p : in std_logic_vector(1023 downto 0); sel : in std_logic_vector(2 downto 0); out_p : out std_logic_vector(3 downto 0) ); end module; entity mux_2_1_4bit is port(a0 : in STD_LOGIC_VECTOR (3 downto 0); a1 : in STD_LOGIC_VECTOR (3 downto 0); s : in STD_LOGIC_VECTOR (1 downto 0); y : out STD_LOGIC_VECTOR (3 downto 0)); end mux_2_1_4bit;
